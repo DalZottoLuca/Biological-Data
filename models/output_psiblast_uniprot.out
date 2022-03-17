@@ -1,0 +1,3368 @@
+PSIBLAST 2.11.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: ./data/msa/uniprot_sprot.fasta
+           563,552 sequences; 203,007,781 total letters
+
+Results from round 1
+
+
+Query= N8S8Y3 Phosphomethylpyrimidine kinase OS=Acinetobacter seifertii
+OX=1530123 GN=F985_03730 PE=4 SV=1
+
+Length=255
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|Q8FTH8|THIED_COREF Thiamine biosynthesis multifunctional prote...  137     9e-36
+sp|Q5M731|TPS1L_ARATH Thiamine biosynthetic bifunctional enzyme T...  135     2e-35
+sp|Q8NVH3|THID_STAAW Hydroxymethylpyrimidine/phosphomethylpyrimid...  127     2e-34
+sp|Q6G7L7|THID_STAAS Hydroxymethylpyrimidine/phosphomethylpyrimid...  127     2e-34
+sp|P99124|THID_STAAN Hydroxymethylpyrimidine/phosphomethylpyrimid...  127     2e-34
+sp|P66915|THID_STAAM Hydroxymethylpyrimidine/phosphomethylpyrimid...  127     2e-34
+sp|P61422|THIED_GEOSL Thiamine biosynthesis bifunctional protein ...  131     4e-34
+sp|Q6GEY2|THID_STAAR Hydroxymethylpyrimidine/phosphomethylpyrimid...  127     4e-34
+sp|O48881|TPS1_BRANA Thiamine biosynthetic bifunctional enzyme BT...  129     3e-33
+sp|O94266|THI22_SCHPO Putative hydroxymethylpyrimidine/phosphomet...  127     1e-32
+sp|P76422|THID_ECOLI Hydroxymethylpyrimidine/phosphomethylpyrimid...  122     2e-32
+sp|O67772|THID_AQUAE Hydroxymethylpyrimidine/phosphomethylpyrimid...  122     2e-32
+sp|O31620|THID_BACSU Hydroxymethylpyrimidine/phosphomethylpyrimid...  121     6e-32
+sp|P55882|THID_SALTY Hydroxymethylpyrimidine/phosphomethylpyrimid...  121     6e-32
+sp|Q2QWK9|TPS1_ORYSJ Probable thiamine biosynthetic bifunctional ...  125     8e-32
+sp|P56904|THID_RHIME Hydroxymethylpyrimidine/phosphomethylpyrimid...  120     2e-31
+sp|Q9ZBL1|THID_MYCLE Hydroxymethylpyrimidine/phosphomethylpyrimid...  117     2e-30
+sp|P44697|THID_HAEIN Hydroxymethylpyrimidine/phosphomethylpyrimid...  116     3e-30
+sp|Q8NQH1|THIED_CORGL Thiamine biosynthesis multifunctional prote...  116     3e-28
+sp|O25515|THID_HELPY Hydroxymethylpyrimidine/phosphomethylpyrimid...  106     2e-26
+sp|Q9ZBR6|THID_STRCO Hydroxymethylpyrimidine/phosphomethylpyrimid...  106     4e-26
+sp|Q9ZL00|THID_HELPJ Hydroxymethylpyrimidine/phosphomethylpyrimid...  105     5e-26
+sp|Q06490|THI22_YEAST Thiamine biosynthesis protein THI22 OS=Sacc...  109     7e-26
+sp|Q08975|THI21_YEAST Hydroxymethylpyrimidine/phosphomethylpyrimi...  107     2e-25
+sp|Q08224|THI20_YEAST Hydroxymethylpyrimidine/phosphomethylpyrimi...  105     1e-24
+sp|P39610|PDXK_BACSU Pyridoxine kinase OS=Bacillus subtilis (stra...  101     2e-24
+sp|Q5HI96|PDXK_STAAC Putative pyridoxine kinase OS=Staphylococcus...  98.1    4e-23
+sp|O85786|THID_SYNE7 Hydroxymethylpyrimidine/phosphomethylpyrimid...  96.6    1e-22
+sp|Q8CTQ7|PDXK_STAES Putative pyridoxine kinase OS=Staphylococcus...  96.6    2e-22
+sp|P9WG77|THID_MYCTU Hydroxymethylpyrimidine/phosphomethylpyrimid...  96.2    2e-22
+sp|P9WG76|THID_MYCTO Hydroxymethylpyrimidine/phosphomethylpyrimid...  96.2    2e-22
+sp|P66914|THID_MYCBO Hydroxymethylpyrimidine/phosphomethylpyrimid...  96.2    2e-22
+sp|Q5HRG7|PDXK_STAEQ Putative pyridoxine kinase OS=Staphylococcus...  96.2    2e-22
+sp|Q9USL6|YJK5_SCHPO Putative hydroxymethylpyrimidine/phosphometh...  81.2    1e-16
+sp|O94265|THI21_SCHPO Putative hydroxymethylpyrimidine/phosphomet...  81.2    3e-16
+sp|Q9WZP7|THIDN_THEMA Bifunctional thiamine biosynthesis protein ...  80.4    4e-16
+sp|Q57688|THIDN_METJA Bifunctional thiamine biosynthesis protein ...  75.8    1e-14
+sp|O83153|PDXK_TREPA Putative pyridoxine kinase OS=Treponema pall...  71.5    2e-13
+sp|Q1R8V2|PDXK_ECOUT Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.5    4e-08
+sp|Q8FFB5|PDXK_ECOL6 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.5    4e-08
+sp|Q0TF48|PDXK_ECOL5 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.5    4e-08
+sp|A1ADT5|PDXK_ECOK1 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.5    4e-08
+sp|B7MY71|PDXK_ECO81 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.5    4e-08
+sp|B7MHS2|PDXK_ECO45 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.5    4e-08
+sp|B7NPV5|PDXK_ECO7I Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  56.1    5e-08
+sp|Q83K78|PDXK_SHIFL Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    7e-08
+sp|Q3YZC3|PDXK_SHISS Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    7e-08
+sp|B6I4Z5|PDXK_ECOSE Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    7e-08
+sp|B7M6S8|PDXK_ECO8A Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    7e-08
+sp|B7UGB9|PDXK_ECO27 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    7e-08
+sp|A7ZPL9|PDXK_ECO24 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    7e-08
+sp|P40191|PDXK_ECOLI Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    8e-08
+sp|B1IX53|PDXK_ECOLC Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    8e-08
+sp|A8A2R4|PDXK_ECOHS Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    8e-08
+sp|B1XA89|PDXK_ECODH Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    8e-08
+sp|C4ZVU9|PDXK_ECOBW Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.7    8e-08
+sp|B2TX08|PDXK_SHIB3 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.4    8e-08
+sp|B7LL66|PDXK_ESCF3 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.4    8e-08
+sp|B7N609|PDXK_ECOLU Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  55.4    9e-08
+sp|B7LCG3|PDXK_ECO55 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  54.6    2e-07
+sp|Q32DD5|PDXK_SHIDS Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  54.6    2e-07
+sp|B5YZW5|PDXK_ECO5E Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  54.2    2e-07
+sp|Q8XBL0|PDXK_ECO57 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  54.2    2e-07
+sp|O01824|PDXK_CAEEL Putative pyridoxal kinase OS=Caenorhabditis ...  54.2    2e-07
+sp|B1LML3|PDXK_ECOSM Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  53.1    5e-07
+sp|Q0BSF0|PDXY_GRABC Pyridoxal kinase PdxY OS=Granulibacter bethe...  51.5    2e-06
+sp|Q87FP6|PDXY_VIBPA Pyridoxal kinase PdxY OS=Vibrio parahaemolyt...  50.4    5e-06
+sp|Q7MGA4|PDXY_VIBVY Pyridoxal kinase PdxY OS=Vibrio vulnificus (...  50.0    5e-06
+sp|Q8D4Q2|PDXY_VIBVU Pyridoxal kinase PdxY OS=Vibrio vulnificus (...  50.0    6e-06
+sp|A7N5Q6|PDXY_VIBCB Pyridoxal kinase PdxY OS=Vibrio campbellii (...  49.6    8e-06
+sp|P40192|PDXK_SALTY Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  49.6    8e-06
+sp|Q57LS3|PDXK_SALCH Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  49.6    8e-06
+sp|Q5PNC8|PDXK_SALPA Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  49.2    1e-05
+sp|Q8Z4W1|PDXK_SALTI Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  48.8    1e-05
+sp|P44690|PDXY_HAEIN Pyridoxal kinase PdxY OS=Haemophilus influen...  47.7    4e-05
+sp|A5UA83|PDXY_HAEIE Pyridoxal kinase PdxY OS=Haemophilus influen...  47.3    5e-05
+sp|Q1CIM6|PDXY_YERPN Pyridoxal kinase PdxY OS=Yersinia pestis bv....  46.9    5e-05
+sp|Q7CIR8|PDXY_YERPE Pyridoxal kinase PdxY OS=Yersinia pestis OX=...  46.9    5e-05
+sp|Q1C792|PDXY_YERPA Pyridoxal kinase PdxY OS=Yersinia pestis bv....  46.9    5e-05
+sp|Q66A50|PDXY_YERPS Pyridoxal kinase PdxY OS=Yersinia pseudotube...  46.9    6e-05
+sp|Q1J237|PDXY_DEIGD Pyridoxal kinase PdxY OS=Deinococcus geother...  46.5    8e-05
+sp|Q1LFU5|PDXK_CUPMC Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  45.7    2e-04
+sp|Q6NG19|PDXY_CORDI Pyridoxal kinase PdxY OS=Corynebacterium dip...  45.0    2e-04
+sp|Q6LP62|PDXY_PHOPR Pyridoxal kinase PdxY OS=Photobacterium prof...  44.6    3e-04
+sp|A3N2D3|PDXY_ACTP2 Pyridoxal kinase PdxY OS=Actinobacillus pleu...  43.8    7e-04
+sp|B3H2H2|PDXY_ACTP7 Pyridoxal kinase PdxY OS=Actinobacillus pleu...  43.8    7e-04
+sp|A6VNE5|PDXY_ACTSZ Pyridoxal kinase PdxY OS=Actinobacillus succ...  43.4    8e-04
+sp|B0UUD2|PDXY_HISS2 Pyridoxal kinase PdxY OS=Histophilus somni (...  42.6    0.002
+sp|Q0I3D2|PDXY_HAES1 Pyridoxal kinase PdxY OS=Haemophilus somnus ...  42.6    0.002
+sp|Q6AFC1|PDXY_LEIXX Pyridoxal kinase PdxY OS=Leifsonia xyli subs...  41.9    0.003
+sp|Q55EK9|PDXK_DICDI Pyridoxal kinase OS=Dictyostelium discoideum...  41.5    0.004
+sp|Q51892|PDXY_PROMI Pyridoxal kinase PdxY OS=Proteus mirabilis O...  41.1    0.005
+sp|Q9CNY1|PDXY_PASMU Pyridoxal kinase PdxY OS=Pasteurella multoci...  41.1    0.005
+sp|C3K4G7|PDXY_PSEFS Pyridoxal kinase PdxY OS=Pseudomonas fluores...  40.7    0.006
+sp|Q5E345|PDXY_ALIF1 Pyridoxal kinase PdxY OS=Aliivibrio fischeri...  40.7    0.007
+sp|Q8W1X2|PDXK_ARATH Pyridoxal kinase OS=Arabidopsis thaliana OX=...  40.7    0.008
+sp|Q65UE8|PDXY_MANSM Pyridoxal kinase PdxY OS=Mannheimia succinic...  40.3    0.009
+sp|Q9RYX0|PDXY_DEIRA Pyridoxal kinase PdxY OS=Deinococcus radiodu...  40.0    0.011
+sp|O14242|YELB_SCHPO Putative pyridoxal kinase C6F6.11c OS=Schizo...  40.0    0.014
+sp|Q2L1P5|PDXK_BORA1 Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  39.6    0.016
+sp|O74860|YQ9A_SCHPO Putative pyridoxal kinase C18.10 OS=Schizosa...  39.2    0.021
+sp|Q83KY1|PDXY_SHIFL Pyridoxal kinase PdxY OS=Shigella flexneri O...  38.4    0.042
+sp|Q8ZPM8|PDXY_SALTY Pyridoxal kinase PdxY OS=Salmonella typhimur...  37.6    0.073
+sp|Q57PI7|PDXY_SALCH Pyridoxal kinase PdxY OS=Salmonella cholerae...  37.6    0.073
+sp|O00764|PDXK_HUMAN Pyridoxal kinase OS=Homo sapiens OX=9606 GN=...  37.6    0.075
+sp|P82197|PDXK_SHEEP Pyridoxal kinase OS=Ovis aries OX=9940 GN=PD...  37.6    0.081
+sp|B1JFM7|PDXY_PSEPW Pyridoxal kinase PdxY OS=Pseudomonas putida ...  37.3    0.10 
+sp|O46560|PDXK_PIG Pyridoxal kinase OS=Sus scrofa OX=9823 GN=PDXK...  37.3    0.11 
+sp|Q7W6K7|PDXK_BORPA Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  36.9    0.11 
+sp|Q7WII1|PDXK_BORBR Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  36.9    0.11 
+sp|A1A6H3|RBSK_ARATH Ribokinase OS=Arabidopsis thaliana OX=3702 G...  36.9    0.15 
+sp|Q8Z6Q3|PDXY_SALTI Putative pyridoxal kinase PdxY OS=Salmonella...  36.1    0.16 
+sp|Q7N3W7|PDXY_PHOLL Pyridoxal kinase PdxY OS=Photorhabdus laumon...  36.5    0.16 
+sp|Q5PIK8|PDXY_SALPA Pyridoxal kinase PdxY OS=Salmonella paratyph...  36.1    0.20 
+sp|Q320Z3|PDXY_SHIBS Pyridoxal kinase PdxY OS=Shigella boydii ser...  36.1    0.22 
+sp|P77150|PDXY_ECOLI Pyridoxal kinase PdxY OS=Escherichia coli (s...  36.1    0.22 
+sp|P39988|BUD16_YEAST Putative pyridoxal kinase BUD16 OS=Saccharo...  35.7    0.29 
+sp|Q32FD7|PDXY_SHIDS Pyridoxal kinase PdxY OS=Shigella dysenteria...  35.3    0.38 
+sp|Q8X649|PDXY_ECO57 Pyridoxal kinase PdxY OS=Escherichia coli O1...  35.3    0.44 
+sp|Q1RBF9|PDXY_ECOUT Pyridoxal kinase PdxY OS=Escherichia coli (s...  34.9    0.46 
+sp|Q0THJ1|PDXY_ECOL5 Pyridoxal kinase PdxY OS=Escherichia coli O6...  34.9    0.46 
+sp|Q49776|HIS1_MYCLE ATP phosphoribosyltransferase OS=Mycobacteri...  34.9    0.48 
+sp|Q8FH89|PDXY_ECOL6 Pyridoxal kinase PdxY OS=Escherichia coli O6...  34.9    0.53 
+sp|Q0II59|PDXK_BOVIN Pyridoxal kinase OS=Bos taurus OX=9913 GN=PD...  34.6    0.73 
+sp|Q3Z1Z2|PDXY_SHISS Pyridoxal kinase PdxY OS=Shigella sonnei (st...  34.2    0.81 
+sp|Q9LIQ4|THIM_ARATH Hydroxyethylthiazole kinase OS=Arabidopsis t...  34.2    0.89 
+sp|A9CES5|TAGK_AGRFC Tagatose kinase OS=Agrobacterium fabrum (str...  34.2    0.94 
+sp|P0A9J6|RBSK_ECOLI Ribokinase OS=Escherichia coli (strain K12) ...  33.8    1.2  
+sp|P0A9J7|RBSK_ECO57 Ribokinase OS=Escherichia coli O157:H7 OX=83...  33.8    1.2  
+sp|P21689|TRPE_PSESS Anthranilate synthase component 1 OS=Pseudom...  34.2    1.3  
+sp|Q5AUZ6|ATNA_EMENI Nonribosomal peptide synthase atnA OS=Emeric...  34.2    1.5  
+sp|O35331|PDXK_RAT Pyridoxal kinase OS=Rattus norvegicus OX=10116...  33.4    1.6  
+sp|P20579|TRPE_PSEPU Anthranilate synthase component 1 OS=Pseudom...  33.4    1.9  
+sp|Q7VYK4|PDXK_BORPE Pyridoxine/pyridoxal/pyridoxamine kinase OS=...  33.0    2.5  
+sp|Q07Y78|HLDE_SHEFN Bifunctional protein HldE OS=Shewanella frig...  33.0    2.7  
+sp|Q8IWD5|MFS6L_HUMAN Major facilitator superfamily domain-contai...  33.0    3.0  
+sp|P37293|NAT2_YEAST Putative N-terminal acetyltransferase 2 OS=S...  32.2    4.0  
+sp|P20580|TRPE_PSEAE Anthranilate synthase component 1 OS=Pseudom...  32.2    4.5  
+sp|Q9VVW8|NNRD_DROME ATP-dependent (S)-NAD(P)H-hydrate dehydratas...  31.9    5.8  
+sp|P83534|RBSKI_LACSD Bifunctional ribokinase/ribose-5-phosphate ...  31.9    5.9  
+sp|Q8ESZ2|THIM1_OCEIH Hydroxyethylthiazole kinase 1 OS=Oceanobaci...  31.1    7.7  
+sp|A9B356|KPTA_HERA2 Probable RNA 2'-phosphotransferase OS=Herpet...  30.7    9.0  
+
+
+>sp|Q8FTH8|THIED_COREF Thiamine biosynthesis multifunctional protein 
+ThiED OS=Corynebacterium efficiens (strain DSM 44549 
+/ YS-314 / AJ 12310 / JCM 11189 / NBRC 100395) OX=196164 GN=thiED 
+PE=3 SV=1
+Length=739
+
+ Score = 137 bits (346),  Expect = 9e-36, Method: Composition-based stats.
+ Identities = 90/250 (36%), Positives = 129/250 (52%), Gaps = 11/250 (4%)
+
+Query  2    RPTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLA  61
+            +P VL  +G DP+GGAG+QAD+++I  +G       TAL  QN+  V G      + L  
+Sbjct  222  QPRVLTIAGTDPTGGAGVQADLKSIAAAGGFGMSVITALVAQNTHGVTGVHTPPADFLDE  281
+
+Query  62   QANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+            Q  +V  D+ +  VK GMLG  D +  +  +LR  P    +LDPV+VA SG SL D    
+Sbjct  282  QLESVFSDVTVDAVKLGMLGRADTVRQVTGWLRTRPHGPVILDPVMVATSGDSLLDPDA-  340
+
+Query  122  VKAFVELIPLATLITPNTVELRALTGVDD-------LEQATEKLFQMGAQAVLVKGGHED  174
+             +A +EL  +  +ITPN  EL  L G          +EQA      +G   V+VKGGH  
+Sbjct  341  TEALLELATVVDVITPNIPELAVLCGEQPAPSFDAAIEQARRFATDVGT-TVIVKGGHLT  399
+
+Query  175  TPDFIKNNLYIDGELAASSNCPRLE-GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETW  233
+             P      +Y DG +   +N PR++    HG+GCSL++ +A R+  G  +  A+  A  W
+Sbjct  400  GPRADNAVVYPDGSVHMVAN-PRVDTTNSHGTGCSLSAALATRMGAGHPVDKALDWATRW  458
+
+Query  234  LFGVLKNAET  243
+            L   L+ A+ 
+Sbjct  459  LNEALRGADA  468
+
+
+>sp|Q5M731|TPS1L_ARATH Thiamine biosynthetic bifunctional enzyme 
+TH1, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=TH1 
+PE=1 SV=1
+Length=522
+
+ Score = 135 bits (339),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 86/240 (36%), Positives = 125/240 (52%), Gaps = 10/240 (4%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D   GAG+QAD++     G + A   TA+T QN++ V        E +  Q
+Sbjct  31   PQVLTVAGSDSGAGAGIQADLKVCAARGVYCASVITAVTAQNTRGVQSVHLLPPEFISEQ  90
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+              +V+ D     VK+GML +T+ +  L + L   P    V+DPV+V+ SG  L   + L 
+Sbjct  91   LKSVLSDFEFDVVKTGMLPSTEIVEVLLQNLSDFPVRALVVDPVMVSTSGHVLAGSSILS  150
+
+Query  123  KAFVELIPLATLITPNTVELRAL------TGVDDLEQATEKLFQMGAQAVLVKGGHEDTP  176
+                 L+P+A +ITPN  E  AL        V ++  A + L +MG + VLVKGG  D P
+Sbjct  151  IFRERLLPIADIITPNVKEASALLDGFRIETVAEMRSAAKSLHEMGPRFVLVKGG--DLP  208
+
+Query  177  DFIKNN-LYIDGELAASSNCPRLEGE-YHGSGCSLASFIAGRLALGDSLKIAVQHAETWL  234
+            D   +  +Y DG+       PR+     HG+GC+LAS IA  LA G S+  AV+ A+ ++
+Sbjct  209  DSSDSVDVYFDGKEFHELRSPRIATRNTHGTGCTLASCIAAELAKGSSMLSAVKVAKRFV  268
+
+
+>sp|Q8NVH3|THID_STAAW Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Staphylococcus aureus (strain MW2) OX=196620 
+GN=thiD PE=3 SV=1
+Length=276
+
+ Score = 127 bits (320),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 74/242 (31%), Positives = 132/242 (55%), Gaps = 9/242 (4%)
+
+Query  1    MRPTV-LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELL  59
+            ++P + L  +G DP+GGAG+ AD+++    G +     T++  QN+  V      + + +
+Sbjct  2    IKPKIALTIAGTDPTGGAGVMADLKSFHSCGVYGMGVVTSIVAQNTLGVQHIHNLNHQWV  61
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQA  119
+              Q ++V +D     +K+GM+ T D +  +  +L  H    YV+DPV++A SG SL D  
+Sbjct  62   DEQLDSVFNDTLPHAIKTGMIATADTMETIRHYLMQHESIPYVIDPVMLAKSGDSLMDND  121
+
+Query  120  TLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATE--KLF--QMGAQAVLVKGGHE  173
+            T       L+PLA ++TPN  E   +TG  +D  E+  +  ++F  ++G++ V++KGGH 
+Sbjct  122  TKQNLQHTLLPLADVVTPNLPEAEEITGLTIDSEEKIMQAGRIFINEIGSKGVIIKGGHS  181
+
+Query  174  DTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAET  232
+            +  D  K+ L+ + E   +    R + ++ HG+GC+ ++ I   LA G  L  AV  A+ 
+Sbjct  182  NDTDIAKDYLFTN-EGVQTFENERFKTKHTHGTGCTFSAVITAELAKGRRLFEAVHKAKK  240
+
+Query  233  WL  234
+            ++
+Sbjct  241  FI  242
+
+
+>sp|Q6G7L7|THID_STAAS Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Staphylococcus aureus (strain MSSA476) OX=282459 
+GN=thiD PE=3 SV=1
+Length=276
+
+ Score = 127 bits (320),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 74/242 (31%), Positives = 132/242 (55%), Gaps = 9/242 (4%)
+
+Query  1    MRPTV-LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELL  59
+            ++P + L  +G DP+GGAG+ AD+++    G +     T++  QN+  V      + + +
+Sbjct  2    IKPKIALTIAGTDPTGGAGVMADLKSFHSCGVYGMGVVTSIVAQNTLGVQHIHNLNHQWV  61
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQA  119
+              Q ++V +D     +K+GM+ T D +  +  +L  H    YV+DPV++A SG SL D  
+Sbjct  62   DEQLDSVFNDTLPHAIKTGMIATADTMETIRHYLMQHESIPYVIDPVMLAKSGDSLMDND  121
+
+Query  120  TLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATE--KLF--QMGAQAVLVKGGHE  173
+            T       L+PLA ++TPN  E   +TG  +D  E+  +  ++F  ++G++ V++KGGH 
+Sbjct  122  TKQNLQHTLLPLADVVTPNLPEAEEITGLTIDSEEKIMQAGRIFINEIGSKGVIIKGGHS  181
+
+Query  174  DTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAET  232
+            +  D  K+ L+ + E   +    R + ++ HG+GC+ ++ I   LA G  L  AV  A+ 
+Sbjct  182  NDTDIAKDYLFTN-EGVQTFENERFKTKHTHGTGCTFSAVITAELAKGRRLFEAVHKAKK  240
+
+Query  233  WL  234
+            ++
+Sbjct  241  FI  242
+
+
+>sp|P99124|THID_STAAN Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Staphylococcus aureus (strain N315) OX=158879 
+GN=thiD PE=1 SV=1
+Length=276
+
+ Score = 127 bits (320),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 73/242 (30%), Positives = 132/242 (55%), Gaps = 9/242 (4%)
+
+Query  1    MRPTV-LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELL  59
+            ++P + L  +G DP+GGAG+ AD+++    G +     T++  QN+  V      + + +
+Sbjct  2    IKPKIALTIAGTDPTGGAGVMADLKSFHSCGVYGMGVVTSIVAQNTLGVQHIHNLNHQWV  61
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQA  119
+              Q ++V +D     +K+GM+ T D +  +  +L  H    YV+DPV++A SG SL D  
+Sbjct  62   DEQLDSVFNDTLPHAIKTGMIATADTMETIRHYLMQHESIPYVIDPVMLAKSGDSLMDND  121
+
+Query  120  TLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATE--KLF--QMGAQAVLVKGGHE  173
+            T       L+PLA ++TPN  E   +TG  +D  E+  +  ++F  ++G++ +++KGGH 
+Sbjct  122  TKQNLQHTLLPLADVVTPNLPEAEEITGLTIDSEEKIMQAGRIFINEIGSKGIIIKGGHS  181
+
+Query  174  DTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAET  232
+            +  D  K+ L+ + E   +    R + ++ HG+GC+ ++ I   LA G  L  AV  A+ 
+Sbjct  182  NDTDIAKDYLFTN-EGVQTFENERFKTKHTHGTGCTFSAVITAELAKGRPLFEAVHKAKK  240
+
+Query  233  WL  234
+            ++
+Sbjct  241  FI  242
+
+
+>sp|P66915|THID_STAAM Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Staphylococcus aureus (strain Mu50 / ATCC 
+700699) OX=158878 GN=thiD PE=3 SV=1
+Length=276
+
+ Score = 127 bits (320),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 73/242 (30%), Positives = 132/242 (55%), Gaps = 9/242 (4%)
+
+Query  1    MRPTV-LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELL  59
+            ++P + L  +G DP+GGAG+ AD+++    G +     T++  QN+  V      + + +
+Sbjct  2    IKPKIALTIAGTDPTGGAGVMADLKSFHSCGVYGMGVVTSIVAQNTLGVQHIHNLNHQWV  61
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQA  119
+              Q ++V +D     +K+GM+ T D +  +  +L  H    YV+DPV++A SG SL D  
+Sbjct  62   DEQLDSVFNDTLPHAIKTGMIATADTMETIRHYLMQHESIPYVIDPVMLAKSGDSLMDND  121
+
+Query  120  TLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATE--KLF--QMGAQAVLVKGGHE  173
+            T       L+PLA ++TPN  E   +TG  +D  E+  +  ++F  ++G++ +++KGGH 
+Sbjct  122  TKQNLQHTLLPLADVVTPNLPEAEEITGLTIDSEEKIMQAGRIFINEIGSKGIIIKGGHS  181
+
+Query  174  DTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAET  232
+            +  D  K+ L+ + E   +    R + ++ HG+GC+ ++ I   LA G  L  AV  A+ 
+Sbjct  182  NDTDIAKDYLFTN-EGVQTFENERFKTKHTHGTGCTFSAVITAELAKGRPLFEAVHKAKK  240
+
+Query  233  WL  234
+            ++
+Sbjct  241  FI  242
+
+
+>sp|P61422|THIED_GEOSL Thiamine biosynthesis bifunctional protein 
+ThiED OS=Geobacter sulfurreducens (strain ATCC 51573 / DSM 
+12127 / PCA) OX=243231 GN=thiDE PE=3 SV=1
+Length=490
+
+ Score = 131 bits (330),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 89/247 (36%), Positives = 136/247 (55%), Gaps = 8/247 (3%)
+
+Query  2    RPTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLA  61
+            R +VL  +G D  GGAG+QAD++ +   G++ +   TALT QN++ V G        +  
+Sbjct  225  RGSVLTVAGSDSGGGAGIQADLKTVTLLGSYGSSVLTALTAQNTRGVSGIHGVPPAFVAD  284
+
+Query  62   QANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+            Q +AV  D+P+  VK+GML + + I A+A  L  +     V+DPV+VA  G +L D+  +
+Sbjct  285  QLDAVFSDIPVDVVKTGMLFSAETIVAIAAKLTEYRRRMVVVDPVMVAKGGANLIDRGAV  344
+
+Query  122  VKAFVELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTP  176
+                  L PLA L+TPN  E   LTG      + + +A  +L ++GA+ VL+KGGH    
+Sbjct  345  SVLKERLFPLAYLVTPNIPEAERLTGANISDEESMREAARRLHRLGARNVLLKGGHLLAG  404
+
+Query  177  DFIKNNLYIDGELAASSNCPR-LEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLF  235
+            D + + L+ DG        PR L    HG+GC+ AS IA  LA GD L+ A+  A+ ++ 
+Sbjct  405  DSV-DILF-DGAAFHRFVSPRILSKNTHGTGCTFASAIATYLAQGDPLREAIARAKRYIT  462
+
+Query  236  GVLKNAE  242
+              ++ A+
+Sbjct  463  AAIRLAQ  469
+
+
+>sp|Q6GEY2|THID_STAAR Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Staphylococcus aureus (strain MRSA252) OX=282458 
+GN=thiD PE=3 SV=1
+Length=276
+
+ Score = 127 bits (318),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 74/242 (31%), Positives = 131/242 (54%), Gaps = 9/242 (4%)
+
+Query  1    MRPTV-LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELL  59
+            ++P + L  +G DP+GGAG+ AD+++    G +     T++  QN+  V      + + +
+Sbjct  2    IKPKIALTIAGTDPTGGAGVMADLKSFHSCGVYGMGVVTSIVAQNTLGVQHIHNLNHQWV  61
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQA  119
+              Q ++V +D     +K+GM+ T D +  +  +L  H    YV+DPV++A SG SL D  
+Sbjct  62   DEQLDSVFNDTLPHAIKTGMIATADTMETIRHYLMQHESIPYVIDPVMLAKSGDSLMDNN  121
+
+Query  120  TLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATE--KLF--QMGAQAVLVKGGHE  173
+            T       L+PLA ++TPN  E   +TG  +D  E+  +  ++F  ++G++ V++KGGH 
+Sbjct  122  TKQNLQHTLLPLADVVTPNLPEAEEITGLTIDSEEKIMQAGRIFINEIGSKGVIIKGGHS  181
+
+Query  174  DTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAET  232
+            +  D  K+ L+   E   +    R + ++ HG+GC+ ++ I   LA G  L  AV  A+ 
+Sbjct  182  NDADIAKDYLFTK-EGVQTFENERFKTKHTHGTGCTFSAVITAELAKGRPLFEAVHKAKK  240
+
+Query  233  WL  234
+            ++
+Sbjct  241  FI  242
+
+
+>sp|O48881|TPS1_BRANA Thiamine biosynthetic bifunctional enzyme 
+BTH1, chloroplastic OS=Brassica napus OX=3708 GN=BTH1 PE=1 
+SV=1
+Length=523
+
+ Score = 129 bits (324),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 86/251 (34%), Positives = 129/251 (51%), Gaps = 10/251 (4%)
+
+Query  5    VLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQAN  64
+            VL  +G D   GAG+QADI+     G + A   TA+  +N++ V        + +  Q  
+Sbjct  35   VLTVAGSDSGAGAGIQADIKVCAARGVYCASVKTAVKAKNTRAVQSVHLLPPDSVSEQLK  94
+
+Query  65   AVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKA  124
+            +V+ D  +  VK+GML + + +  L + L  +P    V+DPV+V+ SG  L   + L   
+Sbjct  95   SVLSDFEVDVVKTGMLPSPEIVEVLLQNLSEYPVRALVVDPVMVSTSGHVLAGSSILSIF  154
+
+Query  125  FVELIPLATLITPNTVELRALTG------VDDLEQATEKLFQMGAQAVLVKGGHEDTPDF  178
+               L+PLA +ITPN  E  AL G      V ++  A + L QMG + VLVKGG  D PD 
+Sbjct  155  RERLLPLADIITPNVKEASALLGGVRIQTVAEMRSAAKSLHQMGPRFVLVKGG--DLPDS  212
+
+Query  179  IKNN-LYIDGELAASSNCPRLEGE-YHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFG  236
+              +  +Y DG      + PR+     HG+GC+LAS IA  LA G ++  AV+ A+ ++  
+Sbjct  213  SDSVDVYFDGNEFHELHSPRIATRNTHGTGCTLASCIAAELAKGSNMLSAVKVAKRFVDS  272
+
+Query  237  VLKNAETPVPN  247
+             L  ++  V  
+Sbjct  273  ALNYSKDIVIG  283
+
+
+>sp|O94266|THI22_SCHPO Putative hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase 2 OS=Schizosaccharomyces pombe (strain 
+972 / ATCC 24843) OX=284812 GN=SPBP8B7.18c PE=3 SV=1
+Length=551
+
+ Score = 127 bits (320),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 84/267 (31%), Positives = 133/267 (50%), Gaps = 23/267 (9%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P  L  +G D SGGAG+QAD++ +   G +   A T L  +N+  V   E  S   + +Q
+Sbjct  36   PVSLTIAGSDCSGGAGIQADLKTMTSLGVYGMSAITCLVAENAGGVDSVEEMSPAFVESQ  95
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+             +  + D+P   VK+GMLG+ + + A+A   +     + V+DPV+VA SG SL  +  + 
+Sbjct  96   IDCCIRDIPCHVVKTGMLGSPEIVKAVARSAKKFNFSKLVVDPVMVATSGDSLVTKDIVS  155
+
+Query  123  KAFVELIPLATLITPNTVE-----------LRALTGVDDLEQATEKLFQMGAQAVLVKGG  171
+                EL+PL  L+TPN  E           +  +  V D+E+    + ++G + VL+KGG
+Sbjct  156  VLNEELLPLTYLVTPNIPEAIVLAKNQGLDISNINSVSDMERCAAVIHKLGPKHVLLKGG  215
+
+Query  172  H-----------EDTPDFIKNNLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALG  220
+            H           +D    + + LY        S+    +GE HG+GC+L+S IA  LA  
+Sbjct  216  HMPVNNLGLKSSDDEDLRVVDILYDGNRFYHFSSSYLKKGEVHGTGCTLSSAIASFLAWE  275
+
+Query  221  DSLKIAVQHAETWLFGVLKNAETPVPN  247
+             SL  AVQ    ++ G + ++  P+ N
+Sbjct  276  HSLTEAVQFGIDYVHGAITHS-PPINN  301
+
+
+>sp|P76422|THID_ECOLI Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Escherichia coli (strain K12) OX=83333 GN=thiD 
+PE=1 SV=1
+Length=266
+
+ Score = 122 bits (307),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 89/253 (35%), Positives = 127/253 (50%), Gaps = 17/253 (7%)
+
+Query  2    RPTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLA  61
+            R   L  +G DPSGGAG+QAD++     GA+     TAL  QN++ V        + + A
+Sbjct  3    RINALTIAGTDPSGGAGIQADLKTFSALGAYGCSVITALVAQNTRGVQSVYRIEPDFVAA  62
+
+Query  62   QANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+            Q ++V  D+ I   K GML  TD + A+AE L+ +     VLD V++A SG  L   + +
+Sbjct  63   QLDSVFSDVRIDTTKIGMLAETDIVEAVAERLQRYQIQNVVLDTVMLAKSGDPLLSPSAV  122
+
+Query  122  VKAFVELIPLATLITPNTVELRAL-------TGVDDLEQATEKLFQMGAQAVLVKGGH--  172
+                  L+P  +LITPN  E  AL       T  + LEQ    L  MG  AVL+KGGH  
+Sbjct  123  ATLRSRLLPQVSLITPNLPEAAALLDAPHARTEQEMLEQG-RSLLAMGCGAVLMKGGHLD  181
+
+Query  173  -EDTPDFIKNNLYIDGELAASSNCPR-LEGEYHGSGCSLASFIAGRLALGDSLKIAVQHA  230
+             E +PD++      +GE       PR +    HG+GC+L++ +A       +    VQ A
+Sbjct  182  DEQSPDWL---FTREGE--QRFTAPRIMTKNTHGTGCTLSAALAALRPRHTNWADTVQEA  236
+
+Query  231  ETWLFGVLKNAET  243
+            ++WL   L  A+T
+Sbjct  237  KSWLSSALAQADT  249
+
+
+>sp|O67772|THID_AQUAE Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Aquifex aeolicus (strain VF5) OX=224324 GN=thiD 
+PE=3 SV=1
+Length=255
+
+ Score = 122 bits (305),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 75/243 (31%), Positives = 122/243 (50%), Gaps = 8/243 (3%)
+
+Query  6    LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANA  65
+            L  +G D SGGAG  ADI      G +     TAL +QN+Q+V+       +++  +  A
+Sbjct  4    LSIAGFDNSGGAGTLADIRTFKHFGIYGVAVITALAVQNTQKVYEVFPIPPDVVKEELKA  63
+
+Query  66   VVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAF  125
+            + +D PIK VK GML   +    + E L+       VLDPV  + SG  L  +  +    
+Sbjct  64   IFEDFPIKGVKIGMLANKEIAEVVYETLKSKKTNFIVLDPVFRSKSGRELLSEEGVEFLK  123
+
+Query  126  VELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIK  180
+             E I +  LITPN  E   L G     ++D++   +K++ +GA++VL+KGGH    ++  
+Sbjct  124  SEFIKIVDLITPNVPEAEILCGEEIKSLEDVKNCAQKIYSLGAKSVLIKGGHLKG-NYAI  182
+
+Query  181  NNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLK  239
+            + LY DG+       P++ G+   G+GC  +S I         L  A++ A+ ++   +K
+Sbjct  183  DILY-DGKSFYEFKAPKIAGKTPRGTGCVYSSAILANYLRHKDLIKAIKTAKDFITEAIK  241
+
+Query  240  NAE  242
+            N++
+Sbjct  242  NSK  244
+
+
+>sp|O31620|THID_BACSU Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Bacillus subtilis (strain 168) OX=224308 GN=thiD 
+PE=1 SV=1
+Length=271
+
+ Score = 121 bits (303),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 77/229 (34%), Positives = 123/229 (54%), Gaps = 7/229 (3%)
+
+Query  18   GLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANAVVDDLPIKCVKS  77
+            G+QADI+   +       A TA+T QN+  V G    + E L  Q +AV +DL    VK+
+Sbjct  19   GIQADIKTFQELDVFGMSAITAVTAQNTLGVHGVHPLTVETLRQQIDAVAEDLRPDAVKT  78
+
+Query  78   GMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITP  137
+            GML   D I  +A  +  +   + ++DPV++A  G SL    ++      LIP +  ITP
+Sbjct  79   GMLWNADMIEEVARKIDEYGFNRVIVDPVMIAKGGASLLRDESVATLKELLIPRSYAITP  138
+
+Query  138  NTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLYIDGELAAS  192
+            N  E   LTG     +DD ++A E+L +MGAQ V++KGGH+   + I + L+ DG +   
+Sbjct  139  NVPEAETLTGMTISSLDDRKKAAEQLVKMGAQHVIIKGGHQPEDNHITDLLF-DGSMFMQ  197
+
+Query  193  SNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKN  240
+               P +  ++ HG+GC+ A+ +  + A GDS+  A + A  ++   ++N
+Sbjct  198  ITHPYINTKHTHGTGCTFAAALTAQTAKGDSIHQAFEVAANFVREAVEN  246
+
+
+>sp|P55882|THID_SALTY Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Salmonella typhimurium (strain LT2 / SGSC1412 
+/ ATCC 700720) OX=99287 GN=thiD PE=1 SV=2
+Length=266
+
+ Score = 121 bits (303),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 88/252 (35%), Positives = 126/252 (50%), Gaps = 15/252 (6%)
+
+Query  2    RPTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLA  61
+            R   L  +G DPSGGAG+QAD++     GA+     TAL  QN+  V        + + A
+Sbjct  3    RINALTIAGTDPSGGAGIQADLKTFSALGAYGCSVITALVAQNTCGVQSVYRIEPDFVAA  62
+
+Query  62   QANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+            Q ++V  D+ I   K GML  TD + A+AE L+ H     VLD V++A SG  L   + +
+Sbjct  63   QLDSVFSDVRIDTTKIGMLAETDIVEAVAERLQRHHVRNVVLDTVMLAKSGDPLLSPSAI  122
+
+Query  122  VKAFVELIPLATLITPNTVELRALTG------VDDLEQATEKLFQMGAQAVLVKGGH-ED  174
+                V L+P  +LITPN  E  AL          ++      L  MG +AVL+KGGH ED
+Sbjct  123  ETLRVRLLPQVSLITPNLPEAAALLDAPHARTEQEMLAQGRALLAMGCEAVLMKGGHLED  182
+
+Query  175  --TPDFIKNNLYIDGELAASSNCPRLEGE-YHGSGCSLASFIAGRLALGDSLKIAVQHAE  231
+              +PD++      +GE     + PR+  +  HG+GC+L++ +A       S    V  A+
+Sbjct  183  AQSPDWL---FTREGE--QRFSAPRVNTKNTHGTGCTLSAALAALRPRHRSWGETVNEAK  237
+
+Query  232  TWLFGVLKNAET  243
+             WL   L  A+T
+Sbjct  238  AWLSAALAQADT  249
+
+
+>sp|Q2QWK9|TPS1_ORYSJ Probable thiamine biosynthetic bifunctional 
+enzyme, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 
+GN=Os12g0192500 PE=2 SV=2
+Length=548
+
+ Score = 125 bits (315),  Expect = 8e-32, Method: Composition-based stats.
+ Identities = 93/262 (35%), Positives = 141/262 (54%), Gaps = 17/262 (6%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D  GGAG+QADI+A    GA+ +   TA+T QN+  V G     +E +  Q
+Sbjct  57   PHVLTVAGSDSGGGAGIQADIKACAALGAYCSSVVTAVTAQNTAGVQGIHVVPEEFIREQ  116
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+             N+V+ D+ +  VK+GML +   +  L E L+  P    V+DPV+V+ SG +L + +TL 
+Sbjct  117  LNSVLSDMSVDVVKTGMLPSIGVVRVLCESLKKFPVKALVVDPVMVSTSGDTLSESSTLS  176
+
+Query  123  KAFVELIPLATLITPNTVELRALTG------VDDLEQATEKLFQMGAQAVLVKGG----H  172
+                EL  +A ++TPN  E   L G      V D+  A E +++ G + VLVKGG     
+Sbjct  177  VYRDELFAMADIVTPNVKEASRLLGGVSLRTVSDMRNAAESIYKFGPKHVLVKGGDMLES  236
+
+Query  173  EDTPDFIKNNLYIDGELAASSNCPRLEGE-YHGSGCSLASFIAGRLALGDSLKIAVQHAE  231
+             D  D     ++ DG+     +  R++    HG+GC+LAS IA  LA G ++  AVQ A+
+Sbjct  237  SDATD-----VFFDGKEFIELHAHRIKTHNTHGTGCTLASCIASELAKGATMLHAVQVAK  291
+
+Query  232  TWLFGVLKNAETPVP-NGQKIP  252
+             ++   L +++  V  NG + P
+Sbjct  292  NFVESALHHSKDLVVGNGPQGP  313
+
+
+>sp|P56904|THID_RHIME Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Rhizobium meliloti (strain 1021) OX=266834 
+GN=thiD PE=3 SV=2
+Length=266
+
+ Score = 120 bits (300),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 84/232 (36%), Positives = 126/232 (54%), Gaps = 10/232 (4%)
+
+Query  18   GLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANAVVDDLPIKCVKS  77
+            G+QAD++     G + A   TA+T QN++ V   E  S E++ AQ +AV  DL +K VK 
+Sbjct  18   GIQADLKTFSALGVYGASVITAITAQNTRGVTAVEDVSAEIVSAQMDAVFSDLDVKAVKI  77
+
+Query  78   GMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITP  137
+            GM+   + IAA+A+ LR     + V+DPV+VA SG +L     +     EL+PLA ++TP
+Sbjct  78   GMVSRRETIAAIADGLRRFGK-RAVVDPVMVATSGDALLRPDAVAALIEELLPLALVVTP  136
+
+Query  138  NTVELRALTG------VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLYIDGELAA  191
+            N  E   +TG        ++ +  E + + GA AVLVKGGH    +    +L+ DG+   
+Sbjct  137  NLAEAALMTGRAIAGDEAEMARQAEAIMRTGAHAVLVKGGHLKGQE--ATDLFFDGDTLV  194
+
+Query  192  SSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNAE  242
+                 R+E    HG+GC+L++ IA  LA G  L  AV  A+ +L   +  A+
+Sbjct  195  RLPAGRIETRNDHGTGCTLSAAIAAGLAKGVPLIEAVSAAKAYLHAAISAAD  246
+
+
+>sp|Q9ZBL1|THID_MYCLE Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Mycobacterium leprae (strain TN) OX=272631 
+GN=thiD PE=3 SV=1
+Length=279
+
+ Score = 117 bits (294),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 83/234 (35%), Positives = 127/234 (54%), Gaps = 10/234 (4%)
+
+Query  18   GLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANAVVDDLPIKCVKS  77
+            G+QAD+  +   G HA  A TA+TIQN+  V GF     E++ +Q  AVV D+ I+  K+
+Sbjct  29   GIQADMRTMTVLGVHACTAVTAVTIQNTLGVEGFHEIPAEIVASQIKAVVTDIGIQSAKT  88
+
+Query  78   GMLGTTDNIAALAE-FLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLIT  136
+            GML ++  IAA+AE +LR+      V+DPV  +  G  L     +      L PLAT++T
+Sbjct  89   GMLASSSIIAAVAETWLRLELTTPLVVDPVCASMHGDPLLTGEAMDSLRDRLFPLATVVT  148
+
+Query  137  PNTVELRALTGVDDLEQATEK-----LFQMGAQAVLVKGGHEDTPDFIKNNLY---IDGE  188
+            PN  E+R L G+D ++  +++     L  +G Q  LVKGGH  + D   + LY     G 
+Sbjct  149  PNLDEVRLLVGIDVVDTESQRAAAMALHALGPQWALVKGGHLRSSDRSCDLLYGGSSAGV  208
+
+Query  189  LAASSNCPRLE-GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+                 + PR++ G  HG G +LA+ ++  LA G ++  AV   + W+   L++A
+Sbjct  209  AFHEFDAPRVQTGNDHGGGDTLAAAVSCALAHGYTVPDAVGFGKRWVTECLRDA  262
+
+
+>sp|P44697|THID_HAEIN Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Haemophilus influenzae (strain ATCC 51907 
+/ DSM 11121 / KW20 / Rd) OX=71421 GN=thiD PE=3 SV=1
+Length=269
+
+ Score = 116 bits (292),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 82/243 (34%), Positives = 125/243 (51%), Gaps = 19/243 (8%)
+
+Query  19   LQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANAVVDDLPIKCVKSG  78
+            +QAD++     G     A TA+T QN+  VF       + + AQ  AV +D  I   K G
+Sbjct  21   IQADLKTFQMRGVFGTSAITAVTAQNTLGVFDIHPIPLKTIQAQLEAVKNDFQIASCKIG  80
+
+Query  79   MLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITPN  138
+            MLG  + I  +A+FL   P    VLDPV++A  G  L  +  +     +L+PLA +ITPN
+Sbjct  81   MLGNAEIIECVADFLADKPFGTLVLDPVMIAKGGAPLLQRQAVSALSQKLLPLADVITPN  140
+
+Query  139  TVELRALTGV---DD--LEQATEKLFQMGAQAVLVKGGH------EDTPDFIKNNLYIDG  187
+              E  ALTG+   DD  ++QA + L + GA+ V++KGGH      E   D++   L  DG
+Sbjct  141  IPEAEALTGIAIVDDISIQQAAKALQKQGAKNVIIKGGHSLNSQSELCQDWV---LLADG  197
+
+Query  188  ELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNAETPVP  246
+                    PR    + HG+GC+ ++ +   LA G+ L+ AV+ A+ ++   + +   P+ 
+Sbjct  198  RHFT-LQSPRFNTPHTHGTGCTFSACLTAELAKGEPLQSAVKTAKDFITAAISH---PLN  253
+
+Query  247  NGQ  249
+             GQ
+Sbjct  254  IGQ  256
+
+
+>sp|Q8NQH1|THIED_CORGL Thiamine biosynthesis multifunctional protein 
+ThiED OS=Corynebacterium glutamicum (strain ATCC 13032 
+/ DSM 20300 / BCRC 11384 / JCM 1318 / LMG 3730 / NCIMB 10025) 
+OX=196627 GN=theD PE=3 SV=2
+Length=763
+
+ Score = 116 bits (290),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 77/246 (31%), Positives = 122/246 (50%), Gaps = 7/246 (3%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G DP+GGAG+QAD+++I   G +     T+L  QN+  V          L  Q
+Sbjct  242  PRVLSIAGTDPTGGAGIQADLKSIAAGGGYGMCVVTSLVAQNTHGVNTIHTPPLTFLEEQ  301
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+              AV  D+ +  +K GMLG+ D +  +A +L  H     VLDPV++A SG  L D A+  
+Sbjct  302  LEAVFSDVTVDAIKLGMLGSADTVDLVASWLGSHEHGPVVLDPVMIATSGDRLLD-ASAE  360
+
+Query  123  KAFVELIPLATLITPNTVELRAL------TGVDDLEQATEKLFQMGAQAVLVKGGHEDTP  176
+            ++   L     ++TPN  EL  L        +D+     +   +     V+VKGGH    
+Sbjct  361  ESLRRLAVHVDVVTPNIPELAVLCDSAPAITMDEAIAQAQGFARTHDTIVIVKGGHLTGA  420
+
+Query  177  DFIKNNLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFG  236
+                  +  DG +    N        HG+GCSL++ +A ++A G+S++ A++ +  WL  
+Sbjct  421  LADNAVVRPDGSVFQVENLRVNTTNSHGTGCSLSASLATKIAAGESVEKALEWSTRWLNE  480
+
+Query  237  VLKNAE  242
+             L++A+
+Sbjct  481  ALRHAD  486
+
+
+>sp|O25515|THID_HELPY Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Helicobacter pylori (strain ATCC 700392 / 
+26695) OX=85962 GN=thiD PE=3 SV=1
+Length=270
+
+ Score = 106 bits (266),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 83/247 (34%), Positives = 126/247 (51%), Gaps = 11/247 (4%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D  GG+G+QAD++A    G       T +T QN+Q V G    S E + AQ
+Sbjct  6    PQVLSIAGSDSGGGSGIQADLKAFQTLGVFGTSVITCITAQNTQGVHGVYPLSVESVKAQ  65
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+              A+ DD  IK  K G L     I  +A+ L        VLDPV+VA +G  L ++  ++
+Sbjct  66   ILAIRDDFSIKAFKMGALCNAQIIECVADTLETCDFGLCVLDPVMVAKNGALLLEEEAIL  125
+
+Query  123  KAFVELIPLATLITPNTVELRALTGVD-----DLEQATEKLFQMGAQAVLVKGGHED--T  175
+                 L+P   L+TPN  E+ ALTGV         +A   L  +G +  ++KGGH +   
+Sbjct  126  SLKKRLLPTTHLLTPNLPEVYALTGVQVRDDKSASKAMGVLRDLGVKNAVIKGGHTEHFQ  185
+
+Query  176  PDFIKNNLYI-DGELAASSNCPRLEGE-YHGSGCSLASFIAGRLALGDSLKIAVQHAETW  233
+             ++  + +++ D E   ++   R   +  HG+GC+L+S I G LA G  LK A+  A+  
+Sbjct  186  GEYSNDWVFLEDAEFILNAK--RFNTKNTHGTGCTLSSLIVGLLAQGLDLKNAISKAKEL  243
+
+Query  234  LFGVLKN  240
+            L  +++N
+Sbjct  244  LTIIIQN  250
+
+
+>sp|Q9ZBR6|THID_STRCO Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Streptomyces coelicolor (strain ATCC BAA-471 
+/ A3(2) / M145) OX=100226 GN=thiD PE=3 SV=1
+Length=269
+
+ Score = 106 bits (264),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 86/239 (36%), Positives = 127/239 (53%), Gaps = 15/239 (6%)
+
+Query  18   GLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANAVVDDLPIKCVKS  77
+            G+QAD++ +   G H     TA+T QNS+ V G      E + AQ  +VVDD+ ++ VK+
+Sbjct  26   GIQADLKTMLALGTHGMSVLTAVTAQNSRGVQGAWELPVEAVRAQYRSVVDDIGVQAVKT  85
+
+Query  78   GMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITP  137
+            GML + + +  +AE L    D   V+DPV V+  G +L   + L      L+P+AT+ TP
+Sbjct  86   GMLSSAELVETVAELL-AGTDAPAVVDPVGVSKHGDALLASSALESVRTRLLPVATVATP  144
+
+Query  138  NTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGGH--EDTPDFIKNNLYIDGELA  190
+            N  E+  LTGV      DL +A   +   G +  L+KGGH   D  D     L  DG   
+Sbjct  145  NLDEVAQLTGVRVDDETDLRRAAAAVLAFGPRWALIKGGHLAGDAVD-----LLTDGSEE  199
+
+Query  191  ASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNAETPVPNG  248
+                 PRL+  + HG+GC+LAS +A  LA G S+ +AV+ A+ ++ G +  A  P+  G
+Sbjct  200  HWLRAPRLDNRHTHGTGCTLASAVACGLAKGQSVPVAVRAAKEYVTGAI-TAGFPLGGG  257
+
+
+>sp|Q9ZL00|THID_HELPJ Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Helicobacter pylori (strain J99 / ATCC 700824) 
+OX=85963 GN=thiD PE=3 SV=1
+Length=269
+
+ Score = 105 bits (263),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 85/247 (34%), Positives = 125/247 (51%), Gaps = 11/247 (4%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D  GGAG+QAD++A    G       T +T QN+Q V G    S E + AQ
+Sbjct  5    PQVLSIAGSDSGGGAGIQADLKAFQTFGVFGTSVITCITAQNTQGVHGVYPLSVESVKAQ  64
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+              A+ DD  IK  K G L     I  +A  L        VLDPV+VA +G  L ++  ++
+Sbjct  65   ILAIRDDFSIKAFKMGALCNAQIIECVANALETCDFGLCVLDPVMVAKNGALLLEEEAIL  124
+
+Query  123  KAFVELIPLATLITPNTVELRALTGVDDLEQATEK-----LFQMGAQAVLVKGGHED--T  175
+                 L+P   L+TPN  E+ ALTGV   +  +       L  +G +  ++KGGH +   
+Sbjct  125  SLKKRLLPKTNLLTPNLPEVYALTGVQARDDKSASKAMGVLRDLGVKNAVIKGGHTEHFQ  184
+
+Query  176  PDFIKNNLYI-DGELAASSNCPRLEGE-YHGSGCSLASFIAGRLALGDSLKIAVQHAETW  233
+             +F  + +++ D E   S+   R   +  HG+GC+L+S I G LA G  LK A+  A+  
+Sbjct  185  GEFSNDWVFLEDAEFILSAK--RFNTKNTHGTGCTLSSLIVGLLAQGLDLKNAITKAKEL  242
+
+Query  234  LFGVLKN  240
+            L  +++N
+Sbjct  243  LTIIIQN  249
+
+
+>sp|Q06490|THI22_YEAST Thiamine biosynthesis protein THI22 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=THI22 PE=2 SV=2
+Length=572
+
+ Score = 109 bits (272),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 77/245 (31%), Positives = 117/245 (48%), Gaps = 25/245 (10%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            PTV+  +G D SGGAG++ADI+ I     +A    T LT Q   +V+G +   K+++   
+Sbjct  46   PTVMSIAGSDSSGGAGVEADIKTITAHRCYAMTCVTTLTAQTPVKVYGAQNIPKKMVSQI  105
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQ--YVLDPVLVANSGGSLGDQAT  120
+             +A + D+    +K+GML T D I  L E L    + +   V+DPVL A S  S   +  
+Sbjct  106  LDANLQDMKCNVIKTGML-TVDAIEVLHEKLLQLGENRPKLVIDPVLCAASDSSPTGKDV  164
+
+Query  121  LVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMG--------AQAVLVKGGH  172
+            +     ++ P A ++TPN  +   L G +      + + ++            +LVKGGH
+Sbjct  165  VSLIIEKISPFADILTPNISDCFMLLGENREVSKLQDVLEIAKDLSRITNCSNILVKGGH  224
+
+Query  173  EDTPD----FIKNNLYIDGELAASSNCPRLEGEY------HGSGCSLASFIAGRLALGDS  222
+                D     I + LY    L A       +G++      HG+GC+LAS IA  LA G S
+Sbjct  225  IPCDDGKEKHITDVLY----LGAEQKFITFKGQFVNTTRTHGAGCTLASAIASNLARGYS  280
+
+Query  223  LKIAV  227
+            L  +V
+Sbjct  281  LSQSV  285
+
+
+>sp|Q08975|THI21_YEAST Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase THI21 OS=Saccharomyces cerevisiae (strain ATCC 
+204508 / S288c) OX=559292 GN=THI21 PE=1 SV=1
+Length=551
+
+ Score = 107 bits (268),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 87/247 (35%), Positives = 124/247 (50%), Gaps = 29/247 (12%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            PTVL  +G DPSGGAG++AD++ I     +A    TAL  Q   +V+    T KE++   
+Sbjct  24   PTVLSIAGTDPSGGAGVEADVKTITAHRCYAMTCITALNAQTPVKVYSINNTPKEVVSQI  83
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQ--YVLDPVLVANSGGSLG--DQ  118
+             +A + D+    +K+GML TT  I  L E L    + +   V+DPVLVA SG SL   D 
+Sbjct  84   LDANLQDMKCDVIKTGML-TTAAIEVLHEKLLQLGENRPKLVVDPVLVATSGSSLAGKDI  142
+
+Query  119  ATLVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMG--------AQAVLVKG  170
+            A+L+    ++ P A ++TPN  E   L G D        +F++            +LVKG
+Sbjct  143  ASLITE--KIAPFADILTPNIPECFKLLGEDREISKLRDIFEVAKDLAKITKCSNILVKG  200
+
+Query  171  GH----EDTPDFIKNNLYIDGELAASSNCPRLEGEY------HGSGCSLASFIAGRLALG  220
+            GH    ++   +I + LY    L A       +G +      HG+GC+LAS IA  LA G
+Sbjct  201  GHIPWNDEEGKYITDVLY----LGAEQRFITFKGNFVNTTHTHGTGCTLASAIASNLARG  256
+
+Query  221  DSLKIAV  227
+             SL  +V
+Sbjct  257  YSLPQSV  263
+
+
+>sp|Q08224|THI20_YEAST Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase THI20 OS=Saccharomyces cerevisiae (strain ATCC 
+204508 / S288c) OX=559292 GN=THI20 PE=1 SV=1
+Length=551
+
+ Score = 105 bits (262),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 81/245 (33%), Positives = 120/245 (49%), Gaps = 25/245 (10%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            PTVL  +G DPSGGAG++AD++ I     +A    TAL  Q   +V+    T KE++   
+Sbjct  24   PTVLSIAGTDPSGGAGIEADVKTITAHRCYAMTCITALNAQTPVKVYSINNTPKEVVFQT  83
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQ--YVLDPVLVANSGGSLGDQAT  120
+              + + D+    +K+GML T   I  L E L    + +   V+DPVLVA SG SL  +  
+Sbjct  84   LESNLKDMKCNVIKTGML-TAAAIEVLHEKLLQLGENRPKLVVDPVLVATSGSSLAGKDI  142
+
+Query  121  LVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMG--------AQAVLVKGGH  172
+            +     ++ P A ++TPN  E   L G +      + +FQ+            +LVKGGH
+Sbjct  143  VSLITEKVAPFADILTPNIPECYKLLGEERKVNGLQDIFQIAKDLAKITKCSNILVKGGH  202
+
+Query  173  ----EDTPDFIKNNLYIDGELAASSNCPRLEGEY------HGSGCSLASFIAGRLALGDS  222
+                ++   +I + L+    L A       +G +      HG+GC+LAS IA  LA G S
+Sbjct  203  IPWNDEKEKYITDVLF----LGAEQKFIIFKGNFVNTTHTHGTGCTLASAIASNLARGYS  258
+
+Query  223  LKIAV  227
+            L  +V
+Sbjct  259  LPQSV  263
+
+
+>sp|P39610|PDXK_BACSU Pyridoxine kinase OS=Bacillus subtilis (strain 
+168) OX=224308 GN=pdxK PE=1 SV=1
+Length=271
+
+ Score = 101 bits (251),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 73/248 (29%), Positives = 123/248 (50%), Gaps = 16/248 (6%)
+
+Query  6    LCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQN-----SQQVFGFEATSKELLL  60
+            L  +G D SGGAG+QAD++   +   +   A T +   +     + QVF  +    + + 
+Sbjct  7    LTIAGSDSSGGAGIQADLKTFQEKNVYGMTALTVIVAMDPNNSWNHQVFPIDT---DTIR  63
+
+Query  61   AQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQAT  120
+            AQ   + D + +  +K+GML T D I   A+ ++       V+DPV+V      +     
+Sbjct  64   AQLATITDGIGVDAMKTGMLPTVDIIELAAKTIKEKQLKNVVIDPVMVCKGANEVLYPEH  123
+
+Query  121  LVKAFVELIPLATLITPNTVELRALTG------VDDLEQATEKLFQMGAQAVLVKGGHED  174
+                  +L PLAT+ITPN  E   L+G      VDD+ +A +K+  +GAQ V++ GG + 
+Sbjct  124  AQALREQLAPLATVITPNLFEASQLSGMDELKTVDDMIEAAKKIHALGAQYVVITGGGKL  183
+
+Query  175  TPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETW  233
+              +   + LY DGE A       ++  Y HG+GC+ ++ +   LA G  +K A+  A+ +
+Sbjct  184  KHEKAVDVLY-DGETAEVLESEMIDTPYTHGAGCTFSAAVTAELAKGAEVKEAIYAAKEF  242
+
+Query  234  LFGVLKNA  241
+            +   +K +
+Sbjct  243  ITAAIKES  250
+
+
+>sp|Q5HI96|PDXK_STAAC Putative pyridoxine kinase OS=Staphylococcus 
+aureus (strain COL) OX=93062 GN=pdxK PE=3 SV=1
+Length=276
+
+ Score = 98.1 bits (243),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 76/251 (30%), Positives = 119/251 (47%), Gaps = 22/251 (9%)
+
+Query  5    VLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQN----SQQVFGFEATSKELLL  60
+            VL  +G D S GAG+QAD++   +   +  +A TA+   +    S  V        E  L
+Sbjct  6    VLTIAGSDTSAGAGMQADLKTFQELDTYGMVALTAIVTMDKDTWSHDVTPLPMDVFEKQL  65
+
+Query  61   AQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSL---GD  117
+              A ++  D     +K+GMLGT + I    E         +V+DPV+V      +   G+
+Sbjct  66   ETALSIGPD----AIKTGMLGTEEIIKRAGEVYEASNAQYFVVDPVMVCKGEDEVLNPGN  121
+
+Query  118  QATLVKAFVELIPLATLITPNTVELRALTG------VDDLEQATEKLFQMGAQAVLVKGG  171
+               ++K    L+P AT++TPN  E   L+G      ++D+++A   +F  GAQ V++KGG
+Sbjct  122  TEAMIKY---LLPKATVVTPNLFEAGQLSGLGKLNSIEDMKKAATIIFDKGAQHVIIKGG  178
+
+Query  172  HEDTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHA  230
+                 D   + LY DG+          +  Y HG+GC+ A+     LA G S K AV  A
+Sbjct  179  KALDQDKSYD-LYYDGQTFYQLTTDMFQQSYNHGAGCTFAAATTAYLANGKSPKEAVISA  237
+
+Query  231  ETWLFGVLKNA  241
+            + ++   +KN 
+Sbjct  238  KAFVASAIKNG  248
+
+
+>sp|O85786|THID_SYNE7 Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Synechococcus elongatus (strain PCC 7942 / 
+FACHB-805) OX=1140 GN=thiD PE=3 SV=2
+Length=263
+
+ Score = 96.6 bits (239),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 79/234 (34%), Positives = 127/234 (54%), Gaps = 16/234 (7%)
+
+Query  18   GLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQANAVVDDLPIKCVKS  77
+            G+QAD+        H   A T +T QN+  V   +A +   + AQ +AV+ DLP + +K+
+Sbjct  19   GIQADLRTFAFHQVHGTCAITCVTAQNTLGVTRVDAIAPAGVAAQLDAVLSDLPPQALKT  78
+
+Query  78   GMLGTTDNIAALAEFLRVHPDYQ-YVLDPVLVANSGGSLGDQATLVKAFVELIPLATLIT  136
+            GML   + +  +A  +   P +   ++DPV+V+ +G  L DQA +      L+PLAT++T
+Sbjct  79   GMLLNAEIMEVVAGTIA--PLFIPRIIDPVMVSRTGAVLIDQAAIAVLRDHLLPLATVLT  136
+
+Query  137  PNTVELRALTGVD-----DLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLYIDGELAA  191
+            PN  E + L G+D     DL++A   +  +G QAVL+KGG   T D+   + + DG+   
+Sbjct  137  PNRYEAQLLAGMDIQDAADLDRAARIIRDLGPQAVLIKGG-AATGDWHGVDWWWDGQ---  192
+
+Query  192  SSNCPRLEG----EYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             S+  + E       HGSGC+LA+ IA   ALG  +  A Q A+ ++   L+++
+Sbjct  193  QSHILKTEAIATPHTHGSGCTLAAAIAANAALGLEILAAAQAAKHYVTKALRHS  246
+
+
+>sp|Q8CTQ7|PDXK_STAES Putative pyridoxine kinase OS=Staphylococcus 
+epidermidis (strain ATCC 12228 / FDA PCI 1200) OX=176280 
+GN=pdxK PE=3 SV=1
+Length=276
+
+ Score = 96.6 bits (239),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 73/249 (29%), Positives = 119/249 (48%), Gaps = 18/249 (7%)
+
+Query  5    VLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQN----SQQVFGFEATSKELLL  60
+            VL  +G D S GAG+QAD++   +   +  +A T++   +    S  V   +    E  L
+Sbjct  6    VLTIAGSDTSAGAGMQADLKTFQELDVYGMVALTSIVTMDKETWSHDVTPIDMNVFEKQL  65
+
+Query  61   AQANAVVDDLPIKCVKSGMLGTTDNIAALAE-FLRVHPDYQYVLDPVLVANSGGSLGDQA  119
+              A ++  D     +K+GMLGT D I    + F+    DY +V+DPV+V      + +  
+Sbjct  66   ETAISIGPD----AIKTGMLGTQDIIKRAGDVFVESGADY-FVVDPVMVCKGEDEVLNPG  120
+
+Query  120  TLVKAFVELIPLATLITPNTVE------LRALTGVDDLEQATEKLFQMGAQAVLVKGGHE  173
+                    L+P AT++TPN  E      L  LT ++D+++A + ++  G   V++KGG  
+Sbjct  121  NTEAMIQYLLPKATVVTPNLFEAGQLSGLGKLTSIEDMKKAAQVIYDKGTPHVIIKGGKA  180
+
+Query  174  DTPDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAET  232
+               D   + LY DG+          +  Y HG+GC+ A+     LA G S K A+  A+ 
+Sbjct  181  LDQDKSYD-LYYDGQQFYQLTTDMFQQSYNHGAGCTFAAATTAYLANGKSPKEAIIAAKA  239
+
+Query  233  WLFGVLKNA  241
+            ++   +KN 
+Sbjct  240  FVASAIKNG  248
+
+
+>sp|P9WG77|THID_MYCTU Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Mycobacterium tuberculosis (strain ATCC 25618 
+/ H37Rv) OX=83332 GN=thiD PE=1 SV=1
+Length=265
+
+ Score = 96.2 bits (238),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 86/246 (35%), Positives = 131/246 (53%), Gaps = 8/246 (3%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D  GGAG+QAD+  +   G HA +A TA+T+QN+  V        +++  Q
+Sbjct  4    PRVLSIAGSDSGGGAGIQADMRTMALLGVHACVAVTAVTVQNTLGVKDIHEVPNDVVAGQ  63
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAAL-AEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+              AVV D+ ++  K+GML ++  +A + A + R+      V+DPV  +  G  L   + L
+Sbjct  64   IEAVVTDIGVQAAKTGMLASSRIVATVAATWRRLELSVPLVVDPVCASMHGDPLLAPSAL  123
+
+Query  122  VKAFVELIPLATLITPNTVELRALTGVDDLEQATEK-----LFQMGAQAVLVKGGHEDTP  176
+                 +L PLATL+TPN  E R L  ++ ++  +++     L  +G Q VLVKGGH  + 
+Sbjct  124  DSLRGQLFPLATLLTPNLDEARLLVDIEVVDAESQRAAAKALHALGPQWVLVKGGHLRSS  183
+
+Query  177  DFIKNNLYIDGELAASSNCPRL-EGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLF  235
+            D   + LY DG      +  RL  G+ HG G +LA+ IA  LA G ++  AV   + W+ 
+Sbjct  184  DGSCDLLY-DGVSCYQFDAQRLPTGDDHGGGDTLATAIAAALAHGFTVPDAVDFGKRWVT  242
+
+Query  236  GVLKNA  241
+              L+ A
+Sbjct  243  ECLRAA  248
+
+
+>sp|P9WG76|THID_MYCTO Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Mycobacterium tuberculosis (strain CDC 1551 
+/ Oshkosh) OX=83331 GN=thiD PE=3 SV=1
+Length=265
+
+ Score = 96.2 bits (238),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 86/246 (35%), Positives = 131/246 (53%), Gaps = 8/246 (3%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D  GGAG+QAD+  +   G HA +A TA+T+QN+  V        +++  Q
+Sbjct  4    PRVLSIAGSDSGGGAGIQADMRTMALLGVHACVAVTAVTVQNTLGVKDIHEVPNDVVAGQ  63
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAAL-AEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+              AVV D+ ++  K+GML ++  +A + A + R+      V+DPV  +  G  L   + L
+Sbjct  64   IEAVVTDIGVQAAKTGMLASSRIVATVAATWRRLELSVPLVVDPVCASMHGDPLLAPSAL  123
+
+Query  122  VKAFVELIPLATLITPNTVELRALTGVDDLEQATEK-----LFQMGAQAVLVKGGHEDTP  176
+                 +L PLATL+TPN  E R L  ++ ++  +++     L  +G Q VLVKGGH  + 
+Sbjct  124  DSLRGQLFPLATLLTPNLDEARLLVDIEVVDAESQRAAAKALHALGPQWVLVKGGHLRSS  183
+
+Query  177  DFIKNNLYIDGELAASSNCPRL-EGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLF  235
+            D   + LY DG      +  RL  G+ HG G +LA+ IA  LA G ++  AV   + W+ 
+Sbjct  184  DGSCDLLY-DGVSCYQFDAQRLPTGDDHGGGDTLATAIAAALAHGFTVPDAVDFGKRWVT  242
+
+Query  236  GVLKNA  241
+              L+ A
+Sbjct  243  ECLRAA  248
+
+
+>sp|P66914|THID_MYCBO Hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase OS=Mycobacterium bovis (strain ATCC BAA-935 / 
+AF2122/97) OX=233413 GN=thiD PE=3 SV=1
+Length=265
+
+ Score = 96.2 bits (238),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 86/246 (35%), Positives = 131/246 (53%), Gaps = 8/246 (3%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            P VL  +G D  GGAG+QAD+  +   G HA +A TA+T+QN+  V        +++  Q
+Sbjct  4    PRVLSIAGSDSGGGAGIQADMRTMALLGVHACVAVTAVTVQNTLGVKDIHEVPNDVVAGQ  63
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAAL-AEFLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+              AVV D+ ++  K+GML ++  +A + A + R+      V+DPV  +  G  L   + L
+Sbjct  64   IEAVVTDIGVQAAKTGMLASSRIVATVAATWRRLELSVPLVVDPVCASMHGDPLLAPSAL  123
+
+Query  122  VKAFVELIPLATLITPNTVELRALTGVDDLEQATEK-----LFQMGAQAVLVKGGHEDTP  176
+                 +L PLATL+TPN  E R L  ++ ++  +++     L  +G Q VLVKGGH  + 
+Sbjct  124  DSLRGQLFPLATLLTPNLDEARLLVDIEVVDAESQRAAAKALHALGPQWVLVKGGHLRSS  183
+
+Query  177  DFIKNNLYIDGELAASSNCPRL-EGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLF  235
+            D   + LY DG      +  RL  G+ HG G +LA+ IA  LA G ++  AV   + W+ 
+Sbjct  184  DGSCDLLY-DGVSCYQFDAQRLPTGDDHGGGDTLATAIAAALAHGFTVPDAVDFGKRWVT  242
+
+Query  236  GVLKNA  241
+              L+ A
+Sbjct  243  ECLRAA  248
+
+
+>sp|Q5HRG7|PDXK_STAEQ Putative pyridoxine kinase OS=Staphylococcus 
+epidermidis (strain ATCC 35984 / RP62A) OX=176279 GN=pdxK 
+PE=3 SV=2
+Length=276
+
+ Score = 96.2 bits (238),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 70/247 (28%), Positives = 121/247 (49%), Gaps = 14/247 (6%)
+
+Query  5    VLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLL--AQ  62
+            VL  +G D S GAG+QAD++   +   +  +A T++   + ++ +  + T  ++ +   Q
+Sbjct  6    VLTIAGSDTSAGAGMQADLKTFQELDVYGMVALTSIVTMD-KETWSHDVTPIDMNIFEKQ  64
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAE-FLRVHPDYQYVLDPVLVANSGGSLGDQATL  121
+                +   P   +K+GMLGT D I    + F+    DY +V+DPV+V      + +    
+Sbjct  65   LETAISIGP-NAIKTGMLGTQDIIKRAGDVFVESGADY-FVVDPVMVCKGEDEVLNPGNT  122
+
+Query  122  VKAFVELIPLATLITPNTVE------LRALTGVDDLEQATEKLFQMGAQAVLVKGGHEDT  175
+                  L+P AT++TPN  E      L  LT ++D+++A + ++  G   V++KGG    
+Sbjct  123  EAMIQYLLPKATVVTPNLFEAGQLSGLGKLTSIEDMKKAAQVIYDKGTPHVIIKGGKALD  182
+
+Query  176  PDFIKNNLYIDGELAASSNCPRLEGEY-HGSGCSLASFIAGRLALGDSLKIAVQHAETWL  234
+             D   + LY DG+          +  Y HG+GC+ A+     LA G S K A+  A+ ++
+Sbjct  183  QDKSYD-LYYDGQQFYQLTTDMFQQSYNHGAGCTFAAATTAYLANGKSPKEAIIAAKAFV  241
+
+Query  235  FGVLKNA  241
+               +KN 
+Sbjct  242  ASAIKNG  248
+
+
+>sp|Q9USL6|YJK5_SCHPO Putative hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase C18B5.05c OS=Schizosaccharomyces pombe 
+(strain 972 / ATCC 24843) OX=284812 GN=SPCC18B5.05c PE=3 
+SV=1
+Length=327
+
+ Score = 81.2 bits (199),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 60/252 (24%), Positives = 102/252 (40%), Gaps = 24/252 (10%)
+
+Query  3    PTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQ  62
+            PT L  +G D SG AG+QAD++ +     +     TALT QNS  + G       L+  Q
+Sbjct  14   PTCLTIAGSDCSGAAGIQADLKVMTAHQVYGMSVLTALTCQNSHGITGIYPLHPSLIQRQ  73
+
+Query  63   ANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLV  122
+             +A + D+  + VK GML    +I  +++ L  +     V+D V++++ G  + +  T+ 
+Sbjct  74   IDACLSDIQCRVVKIGMLPDPKSIPVISQALTKYKITDVVMDSVIISSMGNVMCETPTIP  133
+
+Query  123  KAFVELIPLATLITPNTVEL------------RALTGVDDLEQATEKLFQMGAQAVLVKG  170
+                 L P   +   N +E               L    D++     + ++G + V+++G
+Sbjct  134  ATIQHLFPHLLVYASNVMEAFILVEKTLKKSPPPLKSFPDIQNLMSIIHRLGPKFVVLRG  193
+
+Query  171  GH------------EDTPDFIKNNLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLA  218
+             H             D+  +  + +Y   E              HG  CSL + IA  LA
+Sbjct  194  HHVAFDKNMMITEKPDSKSWTADLIYDGKEFYIFEKPYNTTKSIHGESCSLTAAIASNLA  253
+
+Query  219  LGDSLKIAVQHA  230
+                   A+  A
+Sbjct  254  CNIPPLQAIHEA  265
+
+
+>sp|O94265|THI21_SCHPO Putative hydroxymethylpyrimidine/phosphomethylpyrimidine 
+kinase 1 OS=Schizosaccharomyces pombe (strain 
+972 / ATCC 24843) OX=284812 GN=SPBP8B7.17c PE=3 SV=1
+Length=506
+
+ Score = 81.2 bits (199),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 71/260 (27%), Positives = 121/260 (47%), Gaps = 30/260 (12%)
+
+Query  1    MRPTVLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLL  60
+            M  T +  +G D SGGAG+QAD++       +   A TA+T QN+  V G        + 
+Sbjct  1    MISTCITVAGSDCSGGAGVQADLKVFTAHSVYGMSAVTAITSQNTIGVNGVHLIPASYVE  60
+
+Query  61   AQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQAT  120
+             Q +A + D+  + +K+GML     +  + E +      + V+DP L+A   G+L     
+Sbjct  61   QQISACLLDVHCEVMKTGMLFNQQILKVIVESIDRFKIKKVVVDP-LIATRKGALLVMPD  119
+
+Query  121  LVKAFV-ELIPLATLITPNTVE----LRALTG-------VDDLEQATEKLFQMGAQAVLV  168
+             ++ FV ELIP A ++ PN  E    L+ +T        ++D++   +KL + G + V++
+Sbjct  120  YLELFVKELIPRAEVLIPNIAEALIILKHMTNEFVEIHHLEDVKAVGKKLIKAGCKNVVI  179
+
+Query  169  KGGHEDTP---DFIKNN---------LYIDGELAASSNCPR---LEGEYHGSGCSLASFI  213
+            +   +D P   DF  +          LY+          P+         G+ C+L+S +
+Sbjct  180  RC--DDIPFASDFFCSRETNMPPTWYLYVLCTSEGEVLLPQKWLASKTARGTSCALSSAV  237
+
+Query  214  AGRLALGDSLKIAVQHAETW  233
+            A  LA+G  L  A Q+A ++
+Sbjct  238  ASNLAIGLDLVTATQNAVSY  257
+
+
+>sp|Q9WZP7|THIDN_THEMA Bifunctional thiamine biosynthesis protein 
+ThiDN OS=Thermotoga maritima (strain ATCC 43589 / MSB8 / 
+DSM 3109 / JCM 10099) OX=243274 GN=thiDN PE=1 SV=1
+Length=398
+
+ Score = 80.4 bits (197),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 66/243 (27%), Positives = 108/243 (44%), Gaps = 34/243 (14%)
+
+Query  5    VLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQAN  64
+            VL  +G DPSGGAG+  D++ +   G       +ALT+QN  +VF       E +  +  
+Sbjct  2    VLVVAGFDPSGGAGIIQDVKVLSALGVKTHAVISALTVQNENRVFSVNFRDWEEMRKEIE  61
+
+Query  65   AVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKA  124
+             +    P + +K G L   + +  L E     PD   V + VL ++SG    D    VK 
+Sbjct  62   VLT---PPRVIKVG-LSAPETVKRLREMF---PDSAIVWNVVLESSSGFGFQDPEE-VKK  113
+
+Query  125  FVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLY  184
+            FVE    A  +  N+ E + L   ++                +V GGHE       N + 
+Sbjct  114  FVE---YADYVILNSEEAKKLGEYNNF---------------IVTGGHEKG-----NTVK  150
+
+Query  185  ID-GELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNAET  243
+            +   +       PR+ GE+HG+GC+ +S ++G LA+   ++ A++ A   L  +L+ +  
+Sbjct  151  VKYRDFVFE--IPRVPGEFHGTGCAFSSAVSGFLAMSYPVEEAIRSAMELLKKILERSSG  208
+
+Query  244  PVP  246
+             V 
+Sbjct  209  VVE  211
+
+
+>sp|Q57688|THIDN_METJA Bifunctional thiamine biosynthesis protein 
+ThiDN OS=Methanocaldococcus jannaschii (strain ATCC 43067 
+/ DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=thiDN 
+PE=1 SV=2
+Length=417
+
+ Score = 75.8 bits (185),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 60/231 (26%), Positives = 110/231 (48%), Gaps = 15/231 (6%)
+
+Query  5    VLCFSGLDPSGGAGLQADIEAIGQSGAHAAIACTALTIQNSQQVFGFEATSKELLLAQAN  64
+            +L   G DP+ GAG+ ADI+     G +     T++  QN++ V+      +E +  Q  
+Sbjct  3    ILAIGGYDPTSGAGISADIKTAHTLGVYCPTITTSVIPQNNKMVYEKFDLPEENIKNQFK  62
+
+Query  65   AVVDDLPIKCVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKA  124
+            AV ++  I+ VK+G+L T   I  L +++  + D + + DPVL + +  S  D+  L++ 
+Sbjct  63   AVFEEFDIEYVKTGVL-TKPAIDTLLKYIDKY-DLKVICDPVLASTTKFSFVDEK-LMEK  119
+
+Query  125  FVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLY  184
+            ++EL   + LITPN  E + +            L       +L  G        I + L 
+Sbjct  120  YIELFNKSFLITPNKEEYKKIMEF----IKNNNLMIRNDLYILATG--------IDDILM  167
+
+Query  185  IDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLF  235
+             + +   +    R++ E HG+GC  ++ I   L+ G  L+ A++ A+ ++ 
+Sbjct  168  KNFKPIKTFKGFRVDKEVHGTGCVYSTAITAFLSKGYDLEEAIKEAKRFVL  218
+
+
+>sp|O83153|PDXK_TREPA Putative pyridoxine kinase OS=Treponema 
+pallidum (strain Nichols) OX=243276 GN=pdxK PE=3 SV=1
+Length=269
+
+ Score = 71.5 bits (174),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 60/236 (25%), Positives = 103/236 (44%), Gaps = 17/236 (7%)
+
+Query  19   LQADIEAIGQSGAHAAIACTALTIQN-----SQQVFGFEATSKELLLAQANAVVDDLPIK  73
+            ++AD++   + GA      TA+   +     S +V   E       L  A A V    + 
+Sbjct  18   IEADLKTFQEYGAFGVATLTAIVTMDPSRNWSHRVHSLEEDCVRDQLETAFAGVG---VS  74
+
+Query  74   CVKSGMLGTTDNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLAT  133
+             VKSGML +   I  +AE+L       YV DPV+V    G    +        +L+P AT
+Sbjct  75   AVKSGMLASVHAIECVAEYLERFAVAAYVFDPVMVCKGSGDALHRELNELMIQKLLPRAT  134
+
+Query  134  LITPNTVELRALTGV------DDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLYIDG  187
+            ++TPN  E   + G+      D++++    + + GA  V VKGG          +++ DG
+Sbjct  135  VVTPNLFETAQIAGISVPRTVDEMKEGARLIHERGASHVFVKGGGRLPGCKHALDVFYDG  194
+
+Query  188  EL--AASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+            +          +  G  HG+GC++++ I   L  G +   A+  A+ ++   L++ 
+Sbjct  195  KTFHLVEDELVQ-SGWNHGAGCTVSAAITAGLGRGLTAYDAILSAKRFVTTGLRHG  249
+
+
+>sp|Q1R8V2|PDXK_ECOUT Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain UTI89 / UPEC) OX=364106 GN=pdxK 
+PE=3 SV=1
+Length=283
+
+ Score = 56.5 bits (135),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 84/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTGVD--DLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG D  DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKDCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|Q8FFB5|PDXK_ECOL6 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) 
+OX=199310 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 56.5 bits (135),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 84/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTGVD--DLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG D  DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKDCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|Q0TF48|PDXK_ECOL5 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O6:K15:H31 (strain 536 / UPEC) OX=362663 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 56.5 bits (135),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 84/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTGVD--DLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG D  DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKDCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|A1ADT5|PDXK_ECOK1 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O1:K1 / APEC OX=405955 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 56.5 bits (135),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 84/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTGVD--DLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG D  DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKDCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7MY71|PDXK_ECO81 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O81 (strain ED1a) OX=585397 GN=pdxK PE=3 
+SV=1
+Length=283
+
+ Score = 56.5 bits (135),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 84/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTGVD--DLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG D  DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKDCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7MHS2|PDXK_ECO45 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=pdxK 
+PE=3 SV=1
+Length=283
+
+ Score = 56.5 bits (135),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 84/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTGVD--DLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG D  DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKDCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7NPV5|PDXK_ECO7I Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O7:K1 (strain IAI39 / ExPEC) OX=585057 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 56.1 bits (134),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 82/181 (45%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G  L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKELTNAVHSAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|Q83K78|PDXK_SHIFL Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Shigella flexneri OX=623 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|Q3YZC3|PDXK_SHISS Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Shigella sonnei (strain Ss046) OX=300269 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B6I4Z5|PDXK_ECOSE Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain SE11) OX=409438 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7M6S8|PDXK_ECO8A Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O8 (strain IAI1) OX=585034 GN=pdxK PE=3 
+SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7UGB9|PDXK_ECO27 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|A7ZPL9|PDXK_ECO24 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|P40191|PDXK_ECOLI Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain K12) OX=83333 GN=pdxK PE=1 SV=2
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V+V     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVVTSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVTADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B1IX53|PDXK_ECOLC Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain ATCC 8739 / DSM 1576 / Crooks) 
+OX=481805 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V+V     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVVTSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVTADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|A8A2R4|PDXK_ECOHS Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O9:H4 (strain HS) OX=331112 GN=pdxK PE=3 
+SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V+V     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVVTSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVTADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B1XA89|PDXK_ECODH Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain K12 / DH10B) OX=316385 GN=pdxK 
+PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V+V     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVVTSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVTADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|C4ZVU9|PDXK_ECOBW Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain K12 / MC4100 / BW2952) OX=595496 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.7 bits (133),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 46/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V+V     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVVTSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVTADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B2TX08|PDXK_SHIB3 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Shigella boydii serotype 18 (strain CDC 3083-94 / BS512) 
+OX=344609 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.4 bits (132),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7LL66|PDXK_ESCF3 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / 
+CDC 0568-73) OX=585054 GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.4 bits (132),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 82/181 (45%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G  L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKELTDAVHSAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7N609|PDXK_ECOLU Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O17:K52:H18 (strain UMN026 / ExPEC) OX=585056 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 55.4 bits (132),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VVVVTADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B7LCG3|PDXK_ECO55 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=pdxK 
+PE=3 SV=1
+Length=283
+
+ Score = 54.6 bits (130),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 44/181 (24%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G +L  AV  +   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRSGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|Q32DD5|PDXK_SHIDS Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 54.6 bits (130),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 45/181 (25%), Positives = 82/181 (45%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+               +  +     +  R++ +  G+G    + +   L  G +L  AV  A   +  V++  
+Sbjct  208  VAVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|B5YZW5|PDXK_ECO5E Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O157:H7 (strain EC4115 / EHEC) OX=444450 
+GN=pdxK PE=3 SV=1
+Length=283
+
+ Score = 54.2 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 49/184 (27%), Positives = 88/184 (48%), Gaps = 17/184 (9%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVK--GGHEDTPDFI  179
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++    G+E+  + +
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEML  207
+
+Query  180  KNNLYIDG-ELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+               +  D   + + S   R++ +  G+G    + +   L  G +L  AV  A   +  V+
+Sbjct  208  VVVVTADSVNVISHS---RVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVM  264
+
+Query  239  KNAE  242
+            +  +
+Sbjct  265  RYTQ  268
+
+
+>sp|Q8XBL0|PDXK_ECO57 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli O157:H7 OX=83334 GN=pdxK PE=3 SV=3
+Length=283
+
+ Score = 54.2 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 49/184 (27%), Positives = 88/184 (48%), Gaps = 17/184 (9%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + HPD   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHPDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVK--GGHEDTPDFI  179
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++    G+E+  + +
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEML  207
+
+Query  180  KNNLYIDG-ELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+               +  D   + + S   R++ +  G+G    + +   L  G +L  AV  A   +  V+
+Sbjct  208  VVVVTADSVNVISHS---RVKTDLKGTGDLFCAQLISGLLKGKALNDAVHRAGLRVLEVM  264
+
+Query  239  KNAE  242
+            +  +
+Sbjct  265  RYTQ  268
+
+
+>sp|O01824|PDXK_CAEEL Putative pyridoxal kinase OS=Caenorhabditis 
+elegans OX=6239 GN=pdxk-1 PE=3 SV=2
+Length=321
+
+ Score = 54.2 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 36/121 (30%), Positives = 57/121 (47%), Gaps = 10/121 (8%)
+
+Query  101  YVLDPVLVANSGGSLGDQATLVKAFVELI-PLATLITPNTVELRALTG-----VDDLEQA  154
+            +V DPV+  N  G       L+  + +LI PLA ++TPN  EL  LTG      +D  +A
+Sbjct  131  FVCDPVMGDN--GRYYTPKELMPVYRDLIIPLADVLTPNAFELGELTGSPIETEEDCLRA  188
+
+Query  155  TEKLFQMGAQAVLVKGG--HEDTPDFIKNNLYIDGELAASSNCPRLEGEYHGSGCSLASF  212
+              +L   G + V+V  G     T + ++    + G        PRL G++ G+G +  S 
+Sbjct  189  VNELHAKGVKTVVVTSGVTGAQTNESLRCYASVKGSHVYRFTFPRLVGQFVGTGDTFTSL  248
+
+Query  213  I  213
+            +
+Sbjct  249  L  249
+
+
+>sp|B1LML3|PDXK_ECOSM Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Escherichia coli (strain SMS-3-5 / SECEC) OX=439855 GN=pdxK 
+PE=3 SV=1
+Length=283
+
+ Score = 53.1 bits (126),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 44/181 (24%), Positives = 83/181 (46%), Gaps = 11/181 (6%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V +G +GT   I  LAE+L    + H D   ++DPV + +    +  +  L +A+ +
+Sbjct  89   LRAVTTGYMGTASQIKILAEWLTALRKDHSDLLIMVDPV-IGDIDSGIYVKPDLPEAYRQ  147
+
+Query  128  -LIPLATLITPNTVELRALTG--VDDLE---QATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+PLA  ITPN  EL  LTG    DL+    A + L     + V++     +  +    
+Sbjct  148  YLLPLAQGITPNIFELEILTGKNCRDLDSAIAAAKSLLSDTLKWVVITSASGNEENQEMQ  207
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNA  241
+             + +  +     +  R++ +  G+G    + +   L  G++L  AV  A   +  V++  
+Sbjct  208  VVVVSADSVNVISHSRVKTDLKGTGDLFCAQLISGLLKGEALTDAVHRAGLRVLEVMRYT  267
+
+Query  242  E  242
+            +
+Sbjct  268  Q  268
+
+
+>sp|Q0BSF0|PDXY_GRABC Pyridoxal kinase PdxY OS=Granulibacter bethesdensis 
+(strain ATCC BAA-1260 / CGDNIH1) OX=391165 GN=pdxY 
+PE=3 SV=2
+Length=286
+
+ Score = 51.5 bits (122),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 60/213 (28%), Positives = 101/213 (47%), Gaps = 26/213 (12%)
+
+Query  47   QVFGFEATSKELLLAQANAVVDDLPIKC--VKSGMLGTTDNIA-----ALAEFLRVHPDY  99
+            QVFG +  +    L +  A    LP +C  V SG +G+ D I      A+A     +P+ 
+Sbjct  51   QVFGGDDIAA---LMKGIADRGVLP-RCDAVLSGYMGS-DAIGGAILDAVASVRAANPEA  105
+
+Query  100  QYVLDPVLVANSGGSLGDQATLVKAFVE-LIPLATLITPNTVELRALTG-----VDDLEQ  153
+             Y  DPV + ++G  +  +  L + F +  +P A ++TPN  EL  LTG     + D   
+Sbjct  106  LYCCDPV-IGDTGRGIFVRPGLPELFRDRAVPTANILTPNQFELEWLTGHHCRTLADARA  164
+
+Query  154  ATEKLFQ----MGAQAVLVKGGH-EDTPDFIKNNLYIDGELAASSNCPRLEGEYHGSGCS  208
+            A + L +     G + +LV   H  +TP    + L  +         P L    +G+G +
+Sbjct  165  AVKVLAESMIRQGPRIILVTSLHVAETPSGSLDMLVYENGRFYLLRTPLLPVSINGAGDA  224
+
+Query  209  LAS-FIAGRLALGDSLKIAVQHAETWLFGVLKN  240
+            +A+ F+  RL  GD+ + A++ A + ++G+LK 
+Sbjct  225  IAALFLFHRLDTGDA-RQALEKAASSVYGLLKR  256
+
+
+>sp|Q87FP6|PDXY_VIBPA Pyridoxal kinase PdxY OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 GN=pdxY 
+PE=3 SV=1
+Length=289
+
+ Score = 50.4 bits (119),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 46/177 (26%), Positives = 73/177 (41%), Gaps = 12/177 (7%)
+
+Query  73   KCVKSGMLGTTDNIAAL----AEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVEL  128
+            + V +G  G+ +   A+    A+  + +P+  YV DPV+ A   G +            L
+Sbjct  77   QAVLTGYQGSAEQCLAVEDTVAKVKQANPNALYVCDPVMGAPDKGCIVAPGIAENLLTRL  136
+
+Query  129  IPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNL  183
+            +P+A +I PN  EL          +DD   A ++    G + VLVK  +    +   N L
+Sbjct  137  MPMADVIVPNQFELSQFAEMEIHSLDDAITACQRALAKGPKVVLVKHLY-CLENGSFNML  195
+
+Query  184  YIDGELAASSNCPRLE--GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+                E    +  P+ E   +  G G  +++     L  G S K A QH     +GVL
+Sbjct  196  LATQEGIYLAKRPQFEFAKQPVGVGDLISAIFTSGLLKGWSPKQAFQHCHDACYGVL  252
+
+
+>sp|Q7MGA4|PDXY_VIBVY Pyridoxal kinase PdxY OS=Vibrio vulnificus 
+(strain YJ016) OX=196600 GN=pdxY PE=3 SV=1
+Length=290
+
+ Score = 50.0 bits (118),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 47/177 (27%), Positives = 72/177 (41%), Gaps = 12/177 (7%)
+
+Query  73   KCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVEL  128
+            + V +G  G+ +   A+ E +    + +PD  YV DPV+ A   G +            L
+Sbjct  77   QAVLTGYQGSAEQCLAVEETVTKVKQANPDALYVCDPVMGAPDKGCIVAPGIAENLLNRL  136
+
+Query  129  IPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNL  183
+            +P+A +I PN  EL          +DD   A ++    G + VLVK  +    D   N L
+Sbjct  137  MPMADVIVPNQFELSQFAEMEIHTLDDAIIACQRALAKGPKVVLVKHLY-CLSDESFNML  195
+
+Query  184  YIDGELAASSNCPRLEGEYH--GSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+                E    +  P  E      G+G  +++     L  G + K A QH     +GVL
+Sbjct  196  LATQEGTYLAKRPHFEFAKAPVGAGDLISAIFTAGLLKGWTPKQAFQHCHDACYGVL  252
+
+
+>sp|Q8D4Q2|PDXY_VIBVU Pyridoxal kinase PdxY OS=Vibrio vulnificus 
+(strain CMCP6) OX=216895 GN=pdxY PE=3 SV=1
+Length=290
+
+ Score = 50.0 bits (118),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 47/177 (27%), Positives = 72/177 (41%), Gaps = 12/177 (7%)
+
+Query  73   KCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVEL  128
+            + V +G  G+ +   A+ E +    + +PD  YV DPV+ A   G +            L
+Sbjct  77   QAVLTGYQGSAEQCLAVEETVTKVKQANPDALYVCDPVMGAPDKGCIVAPGIAENLLNRL  136
+
+Query  129  IPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNL  183
+            +P+A +I PN  EL          +DD   A ++    G + VLVK  +    D   N L
+Sbjct  137  MPMADVIVPNQFELSQFAEMEIHTLDDAIIACQRALAKGPKVVLVKHLY-CLSDESFNML  195
+
+Query  184  YIDGELAASSNCPRLEGEYH--GSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+                E    +  P  E      G+G  +++     L  G + K A QH     +GVL
+Sbjct  196  LATQEGTYLAKRPHFEFAKAPVGAGDLISAIFTAGLLKGWTPKQAFQHCHDACYGVL  252
+
+
+>sp|A7N5Q6|PDXY_VIBCB Pyridoxal kinase PdxY OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=pdxY PE=3 SV=1
+Length=289
+
+ Score = 49.6 bits (117),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 45/177 (25%), Positives = 73/177 (41%), Gaps = 12/177 (7%)
+
+Query  73   KCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVEL  128
+            + V +G  G+ +   A+ + +    + +P+  YV DPV+ A   G +            L
+Sbjct  77   QAVLTGYQGSAEQCLAVEDTVTKVKQANPEALYVCDPVMGAPDKGCIVAPGIAENLLNRL  136
+
+Query  129  IPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNL  183
+            +P+A +I PN  EL          +DD   A ++    G + VLVK  +  + D   N L
+Sbjct  137  MPMADVIVPNQFELSQFAEMEIHTLDDAINACQRALAKGPKVVLVKHLYCLSDDSF-NML  195
+
+Query  184  YIDGELAASSNCPRLEGEYH--GSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+                E    +  P  E      G+G  +++     L  G + K A QH     +GVL
+Sbjct  196  LATSEGTYLAKRPHFEFAKAPVGAGDLISAIFTAGLLKGWTPKQAFQHCHDACYGVL  252
+
+
+>sp|P40192|PDXK_SALTY Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=pdxK PE=2 SV=2
+Length=288
+
+ Score = 49.6 bits (117),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 39/177 (22%), Positives = 82/177 (46%), Gaps = 12/177 (7%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSLGDQATLVKAF-V  126
+            +K + +G +G+ D I  L+++L      HP+   ++DPV + ++   +  QA + +A+  
+Sbjct  94   LKAITTGYMGSADQIVLLSKWLMAIRASHPEVCILVDPV-IGDTDSGMYVQAEIPQAYRT  152
+
+Query  127  ELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+P A  +TPN  EL  L+G     +++   A + L     + V++     ++ + I  
+Sbjct  153  HLLPQAQGLTPNVFELEMLSGKPCRTLEEAVAAAQSLLSDTLKWVVITSAPGESLETITV  212
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             +     +   ++ PR+  E  G+G    + +   +  G  L  A + A   +  V+
+Sbjct  213  AVVTAQVVEVFAH-PRVATELKGTGDLFCAELVSGIVQGKKLTTAAKDAAQRVLEVM  268
+
+
+>sp|Q57LS3|PDXK_SALCH Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Salmonella choleraesuis (strain SC-B67) OX=321314 GN=pdxK 
+PE=3 SV=1
+Length=288
+
+ Score = 49.6 bits (117),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 39/177 (22%), Positives = 82/177 (46%), Gaps = 12/177 (7%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSLGDQATLVKAF-V  126
+            +K + +G +G+ D I  L+++L      HP+   ++DPV + ++   +  QA + +A+  
+Sbjct  94   LKAITTGYMGSADQIVLLSKWLMAIRASHPEVCILVDPV-IGDTDSGMYVQAEIPQAYRT  152
+
+Query  127  ELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+P A  +TPN  EL  L+G     +++   A + L     + V++     ++ + I  
+Sbjct  153  HLLPQAQGLTPNVFELEMLSGKPCRTLEEAVAAAQSLLSDTLKWVVITSAPGESLETITV  212
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             +     +   ++ PR+  E  G+G    + +   +  G  L  A + A   +  V+
+Sbjct  213  AVVTAQVVEVFAH-PRVATELKGTGDLFCAELVSGIVQGKKLTTAAKDAAQRVLEVM  268
+
+
+>sp|Q5PNC8|PDXK_SALPA Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Salmonella paratyphi A (strain ATCC 9150 / SARB42) OX=295319 
+GN=pdxK PE=3 SV=1
+Length=288
+
+ Score = 49.2 bits (116),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 39/177 (22%), Positives = 82/177 (46%), Gaps = 12/177 (7%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSLGDQATLVKAF-V  126
+            +K + +G +G+ D I  L+++L      HP+   ++DPV + ++   +  QA + +A+  
+Sbjct  94   LKAITTGYMGSADQIVLLSKWLMAIRASHPEVCILVDPV-IGDTDSGMYVQAEIPQAYRT  152
+
+Query  127  ELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+P A  +TPN  EL  L+G     +++   A + L     + V++     ++ + I  
+Sbjct  153  YLLPQAQGLTPNVFELEMLSGKPCRTLEEAVAAAQSLLSDTLKWVVITSAPGESLETITV  212
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             +     +   ++ PR+  E  G+G    + +   +  G  L  A + A   +  V+
+Sbjct  213  AVVTAQVVEVFAH-PRVATELKGTGDLFCAELVSDIVQGKKLTTAAKDAAQRVLEVM  268
+
+
+>sp|Q8Z4W1|PDXK_SALTI Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Salmonella typhi OX=90370 GN=pdxK PE=3 SV=1
+Length=288
+
+ Score = 48.8 bits (115),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 39/177 (22%), Positives = 82/177 (46%), Gaps = 12/177 (7%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSLGDQATLVKAF-V  126
+            +K + +G +G+ D I  L+++L      HP+   ++DPV + ++   +  QA + +A+  
+Sbjct  94   LKAITTGNMGSADQIVLLSKWLMAIRASHPEVCILVDPV-IGDTDSGMYVQAEIPQAYRT  152
+
+Query  127  ELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+             L+P A  +TPN  EL  L+G     +++   A + L     + V++     ++ + I  
+Sbjct  153  HLLPQAQGLTPNVFELEMLSGKPCRTLEEAVAAAQSLLSDTLKWVVITSAPGESLETITV  212
+
+Query  182  NLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             +     +   ++ PR+  E  G+G    + +   +  G  L  A + A   +  V+
+Sbjct  213  AVVTAQVVEVFAH-PRVATELKGTGDLFCAELVSGIVQGKKLTTAAKDAAQRVLEVM  268
+
+
+>sp|P44690|PDXY_HAEIN Pyridoxal kinase PdxY OS=Haemophilus influenzae 
+(strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 
+GN=pdxY PE=3 SV=1
+Length=288
+
+ Score = 47.7 bits (112),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 39/122 (32%), Positives = 58/122 (48%), Gaps = 29/122 (24%)
+
+Query  77   SGMLGTTDNIA----ALAEFLRVHPDYQYVLDPVL--------VANSGGSLGDQATLVKA  124
+            SG LG+ + +     AL +    +P+  Y+ DPV+        VAN     G +  L++ 
+Sbjct  80   SGYLGSAEQVDQILFALEQIKLRNPNALYLCDPVMPHPKKICVVAN-----GVREALIE-  133
+
+Query  125  FVELIPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVK----GGHEDT  175
+              + IP+A ++TPN  ELR LT       DD+ +A   L   G + VLVK     G  + 
+Sbjct  134  --KAIPVADIMTPNLHELRQLTEFPINTFDDVLKAVNALIAKGVKKVLVKHLGSAGKIND  191
+
+Query  176  PD  177
+            PD
+Sbjct  192  PD  193
+
+
+>sp|A5UA83|PDXY_HAEIE Pyridoxal kinase PdxY OS=Haemophilus influenzae 
+(strain PittEE) OX=374930 GN=pdxY PE=3 SV=1
+Length=288
+
+ Score = 47.3 bits (111),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 39/123 (32%), Positives = 57/123 (46%), Gaps = 31/123 (25%)
+
+Query  77   SGMLGTTDNIA----ALAEFLRVHPDYQYVLDPVL--------VANSGGSLGDQATLVKA  124
+            SG LG+ + +     AL +    +P+  Y+ DPV+        VAN          + +A
+Sbjct  80   SGYLGSAEQVDQILFALEQIKLRNPNALYLCDPVMPHPKKSCVVANG---------VCEA  130
+
+Query  125  FVE-LIPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVK----GGHED  174
+             +E  IP+A ++TPN  ELR LT       DD+ +A   L   G + VLVK     G  +
+Sbjct  131  LIEKAIPVADIMTPNLHELRQLTEFPINTFDDVLKAVNALIAKGVKKVLVKHLGSAGKIN  190
+
+Query  175  TPD  177
+             PD
+Sbjct  191  DPD  193
+
+
+>sp|Q1CIM6|PDXY_YERPN Pyridoxal kinase PdxY OS=Yersinia pestis 
+bv. Antiqua (strain Nepal516) OX=377628 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 46.9 bits (110),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 56/107 (52%), Gaps = 13/107 (12%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFV--E  127
+             V SG +G+ +     +AA+A+  + +PD  Y  DPV+     G +   A  V  F   E
+Sbjct  77   AVLSGYIGSPEQGSHILAAVAQVKQANPDAWYFCDPVMGHPEKGCI--VAPGVAEFFCNE  134
+
+Query  128  LIPLATLITPNTVELRALTG--VDDLEQATE---KLFQMGAQAVLVK  169
+             +P + +I PN +EL  L+G  V+++EQA +    L   G + VLVK
+Sbjct  135  ALPASDMIAPNLLELEQLSGERVENVEQAVQVARSLCARGPKVVLVK  181
+
+
+>sp|Q7CIR8|PDXY_YERPE Pyridoxal kinase PdxY OS=Yersinia pestis 
+OX=632 GN=pdxY PE=1 SV=1
+Length=286
+
+ Score = 46.9 bits (110),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 56/107 (52%), Gaps = 13/107 (12%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFV--E  127
+             V SG +G+ +     +AA+A+  + +PD  Y  DPV+     G +   A  V  F   E
+Sbjct  77   AVLSGYIGSPEQGSHILAAVAQVKQANPDAWYFCDPVMGHPEKGCI--VAPGVAEFFCNE  134
+
+Query  128  LIPLATLITPNTVELRALTG--VDDLEQATE---KLFQMGAQAVLVK  169
+             +P + +I PN +EL  L+G  V+++EQA +    L   G + VLVK
+Sbjct  135  ALPASDMIAPNLLELEQLSGERVENVEQAVQVARSLCARGPKVVLVK  181
+
+
+>sp|Q1C792|PDXY_YERPA Pyridoxal kinase PdxY OS=Yersinia pestis 
+bv. Antiqua (strain Antiqua) OX=360102 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 46.9 bits (110),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 56/107 (52%), Gaps = 13/107 (12%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFV--E  127
+             V SG +G+ +     +AA+A+  + +PD  Y  DPV+     G +   A  V  F   E
+Sbjct  77   AVLSGYIGSPEQGSHILAAVAQVKQANPDAWYFCDPVMGHPEKGCI--VAPGVAEFFCNE  134
+
+Query  128  LIPLATLITPNTVELRALTG--VDDLEQATE---KLFQMGAQAVLVK  169
+             +P + +I PN +EL  L+G  V+++EQA +    L   G + VLVK
+Sbjct  135  ALPASDMIAPNLLELEQLSGERVENVEQAVQVARSLCARGPKVVLVK  181
+
+
+>sp|Q66A50|PDXY_YERPS Pyridoxal kinase PdxY OS=Yersinia pseudotuberculosis 
+serotype I (strain IP32953) OX=273123 GN=pdxY PE=3 
+SV=1
+Length=286
+
+ Score = 46.9 bits (110),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 56/107 (52%), Gaps = 13/107 (12%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFV--E  127
+             V SG +G+ +     +AA+A+  + +PD  Y  DPV+     G +   A  V  F   E
+Sbjct  77   AVLSGYIGSPEQGSHILAAVAQVKQANPDAWYFCDPVMGHPEKGCI--VAPGVAEFFCNE  134
+
+Query  128  LIPLATLITPNTVELRALTG--VDDLEQATE---KLFQMGAQAVLVK  169
+             +P + +I PN +EL  L+G  V+++EQA +    L   G + VLVK
+Sbjct  135  ALPASDMIAPNLLELEQLSGERVENVEQAVQVARSLCARGPKVVLVK  181
+
+
+>sp|Q1J237|PDXY_DEIGD Pyridoxal kinase PdxY OS=Deinococcus geothermalis 
+(strain DSM 11300 / AG-3a) OX=319795 GN=pdxY PE=3 
+SV=1
+Length=299
+
+ Score = 46.5 bits (109),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 54/196 (28%), Positives = 84/196 (43%), Gaps = 27/196 (14%)
+
+Query  65   AVVDDLPI-KCVKSGMLGTTDNIAALAEFLR----VHPDYQYVLDPVLVANSGGSLGDQA  119
+            A    LP    V SG +G+   ++A+ E +R     +P   Y  DPV+     G +G   
+Sbjct  76   AARGVLPTCAAVLSGYMGSEGTVSAVVEAVRRVREANPAALYCCDPVM-----GDVGRGV  130
+
+Query  120  TLVKAFVELI-----PLATLITPNTVELRALTG--VDDLEQATE-------KLFQMGAQA  165
+             +     +LI     P A ++TPN  EL  LTG  V  L++A +        L + G + 
+Sbjct  131  FVRPELPDLIRTQAVPEADIVTPNQFELELLTGRRVTRLQEALDASRMLRGTLREGGPRL  190
+
+Query  166  VLVKG-GHEDTPDFIKNNLYIDGELAASSNCP--RLEGEYHGSGCSLASFIAGRLALGDS  222
+            V+V     ED P  +   L + GE A     P   L+   +G+G ++A+   G       
+Sbjct  191  VVVTSLVREDAPQGVIETLAVTGEGAWLCRTPLLPLDPPRNGTGDAIAALFLGHYLRTQD  250
+
+Query  223  LKIAVQHAETWLFGVL  238
+               A+  + + LF VL
+Sbjct  251  AGTALSLSMSALFAVL  266
+
+
+>sp|Q1LFU5|PDXK_CUPMC Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Cupriavidus metallidurans (strain ATCC 43123 / DSM 2839 
+/ NBRC 102507 / CH34) OX=266264 GN=pdxK PE=3 SV=1
+Length=288
+
+ Score = 45.7 bits (107),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 50/180 (28%), Positives = 76/180 (42%), Gaps = 32/180 (18%)
+
+Query  72   IKCVKSGMLGTTDNIAALA----EFLRVHPDYQYVLDPVLVANSGGSLGDQAT-------  120
+            +K +  G LG  + +A L+    + L  HPD Q ++DPV        +GD  T       
+Sbjct  89   LKAILVGYLGNPEQVAVLSRWINQVLAEHPDVQVIVDPV--------IGDHDTGIYVADG  140
+
+Query  121  LVKAFVE-LIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVKGGHED  174
+            +V+A  E L+PLA  +TPN  EL  L+G     V+ +  A   L     Q ++V      
+Sbjct  141  MVEAVRELLLPLAHGLTPNDFELGHLSGRSADSVEQVVAAARSLLTDRVQWMVVTSAAPG  200
+
+Query  175  TPDFIKNNLYI----DGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHA  230
+            T       L I    D ++ +    PR+     G+G   ++ +  RL  G  L  A   A
+Sbjct  201  TWGHDDMKLLIVTRDDAQVLSH---PRIPVSPKGTGDLFSAKLTARLLEGMPLAEAAASA  257
+
+
+>sp|Q6NG19|PDXY_CORDI Pyridoxal kinase PdxY OS=Corynebacterium 
+diphtheriae (strain ATCC 700971 / NCTC 13129 / Biotype gravis) 
+OX=257309 GN=pdxY PE=3 SV=2
+Length=283
+
+ Score = 45.0 bits (105),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 44/157 (28%), Positives = 70/157 (45%), Gaps = 16/157 (10%)
+
+Query  72   IKCVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVL-VANSGGSLGDQATLVKAFV  126
+            I  + SG  G +D     + A+A     +P   Y  DPV+  A SG  + D   L+   +
+Sbjct  74   IDAILSGYQGGSDIADVIVDAVARIKEANPQAVYACDPVMGNAKSGCFVSD---LIPPLL  130
+
+Query  127  --ELIPLATLITPNTVELRALTGVDDLE-----QATEKLFQMGAQAVLVKGGHE-DTPDF  178
+              +++P+A +ITPN  EL  LTGV   +     +A     +MG   VLV      +TP  
+Sbjct  131  RDKVVPVADIITPNQFELEYLTGVPAHDTTSTLEAIAAAQEMGPNTVLVTSVRRPETPAD  190
+
+Query  179  IKNNLYIDGELAASSNCPRLEGEYHGSGCSLASFIAG  215
+                +  + + A     P ++ + +GSG   A+   G
+Sbjct  191  AIEMIAANEQGAWLVRTPFIDFKRNGSGDVTAALFTG  227
+
+
+>sp|Q6LP62|PDXY_PHOPR Pyridoxal kinase PdxY OS=Photobacterium 
+profundum (strain SS9) OX=298386 GN=pdxY PE=3 SV=1
+Length=291
+
+ Score = 44.6 bits (104),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 43/178 (24%), Positives = 67/178 (38%), Gaps = 10/178 (6%)
+
+Query  73   KCVKSGMLGTTDNIAALAEFLR----VHPDYQYVLDPVLVANSGGSLGDQATLVKAFVEL  128
+            K + +G  G+ +   A+   +      +P   Y+ DPV+ A   G +            L
+Sbjct  77   KAILTGYQGSAEQCEAIIRTVEKVKAQNPSSLYICDPVMGAPDKGCIVAPGITEYLVDHL  136
+
+Query  129  IPLATLITPNTVELRALTGVD-----DLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNL  183
+            +P+A +I PN  EL     ++     D  +A       G + VLVK  +  + D     L
+Sbjct  137  MPMADVIVPNQFELSQFAQMEINTLSDAVEACNIALAKGPKVVLVKHLYCVSDDKFSMLL  196
+
+Query  184  YI-DGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKN  240
+               +G   A         +  G G  ++S     L  G S   A QH     +GVLK 
+Sbjct  197  ATPEGCFLAQRPHLTFAQQPVGVGDLISSLFTAGLLKGYSTMRAFQHCHDACYGVLKQ  254
+
+
+>sp|A3N2D3|PDXY_ACTP2 Pyridoxal kinase PdxY OS=Actinobacillus 
+pleuropneumoniae serotype 5b (strain L20) OX=416269 GN=pdxY 
+PE=3 SV=1
+Length=286
+
+ Score = 43.8 bits (102),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 37/117 (32%), Positives = 59/117 (50%), Gaps = 18/117 (15%)
+
+Query  67   VDDLPIKC--VKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSL---GD  117
+            + +L  KC  V SG +G+ + +  +          +P+  Y+ DPV+     G +   G 
+Sbjct  69   IGELA-KCDAVLSGYIGSAEQVTEIVNAFHTVKSRNPNAIYLCDPVMGHPDKGRIVADGV  127
+
+Query  118  QATLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATEK---LFQMGAQAVLVK  169
+            +  L+K   + +  A +ITPN VELR L+G  V++ EQA E    +   G + VLVK
+Sbjct  128  KEGLIK---QAMAHADIITPNLVELRELSGLRVENFEQAIEAVKVILTKGPKKVLVK  181
+
+
+>sp|B3H2H2|PDXY_ACTP7 Pyridoxal kinase PdxY OS=Actinobacillus 
+pleuropneumoniae serotype 7 (strain AP76) OX=537457 GN=pdxY 
+PE=3 SV=1
+Length=286
+
+ Score = 43.8 bits (102),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 37/117 (32%), Positives = 59/117 (50%), Gaps = 18/117 (15%)
+
+Query  67   VDDLPIKC--VKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSL---GD  117
+            + +L  KC  V SG +G+ + +  +          +P+  Y+ DPV+     G +   G 
+Sbjct  69   IGELA-KCDAVLSGYIGSAEQVTEIVNAFHTVKSRNPNAIYLCDPVMGHPDKGCIVADGV  127
+
+Query  118  QATLVKAFVELIPLATLITPNTVELRALTG--VDDLEQATEK---LFQMGAQAVLVK  169
+            +  L+K   + +  A +ITPN VELR L+G  V++ EQA E    +   G + VLVK
+Sbjct  128  KEGLIK---QAMAHADIITPNLVELRELSGLSVENFEQAIEAVKVILTKGPKKVLVK  181
+
+
+>sp|A6VNE5|PDXY_ACTSZ Pyridoxal kinase PdxY OS=Actinobacillus 
+succinogenes (strain ATCC 55618 / DSM 22257 / 130Z) OX=339671 
+GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 43.4 bits (101),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 30/105 (29%), Positives = 50/105 (48%), Gaps = 9/105 (9%)
+
+Query  74   CVKSGMLGTTDNIAALAEFLR----VHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG +G+ D +A + +        +    Y+ DPV+ +   G +             +
+Sbjct  77   AVLSGYIGSADQVAEIVKVSHLVKTRNAAALYLCDPVMGSAEKGCVVADGVREGLIDIAL  136
+
+Query  130  PLATLITPNTVELRALTGV--DDLEQ---ATEKLFQMGAQAVLVK  169
+            P A +ITPN +ELR L+G+  ++ EQ   A + L   G + V+VK
+Sbjct  137  PQADIITPNLLELRELSGLRAENFEQAVIAAQHLLTKGPKTVIVK  181
+
+
+>sp|B0UUD2|PDXY_HISS2 Pyridoxal kinase PdxY OS=Histophilus somni 
+(strain 2336) OX=228400 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 42.6 bits (99),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 36/108 (33%), Positives = 53/108 (49%), Gaps = 15/108 (14%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSL---GDQATLVKAFV  126
+             V SG +G+ +     I A  +    +P   Y+ DPV+     G +   G +  L+K   
+Sbjct  77   AVLSGYIGSAEQVEEIIKAFHKIKERNPKAIYLCDPVMGHPDKGCVVADGVKEGLIKI--  134
+
+Query  127  ELIPLATLITPNTVELRALTG--VDDLEQATEK---LFQMGAQAVLVK  169
+              +  A +ITPN VELR L+G  V++ EQA E    +   G + VLVK
+Sbjct  135  -AMAQADIITPNLVELRELSGLAVENFEQAIEAVKVILSKGPKKVLVK  181
+
+
+>sp|Q0I3D2|PDXY_HAES1 Pyridoxal kinase PdxY OS=Haemophilus somnus 
+(strain 129Pt) OX=205914 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 42.6 bits (99),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 36/108 (33%), Positives = 53/108 (49%), Gaps = 15/108 (14%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSL---GDQATLVKAFV  126
+             V SG +G+ +     I A  +    +P   Y+ DPV+     G +   G +  L+K   
+Sbjct  77   AVLSGYIGSAEQVEEIIKAFHKIKERNPKAIYLCDPVMGHPDKGCVVADGVKEGLIKI--  134
+
+Query  127  ELIPLATLITPNTVELRALTG--VDDLEQATEK---LFQMGAQAVLVK  169
+              +  A +ITPN VELR L+G  V++ EQA E    +   G + VLVK
+Sbjct  135  -AMAQADIITPNLVELRELSGLAVENFEQAIEAVKVILSKGPKKVLVK  181
+
+
+>sp|Q6AFC1|PDXY_LEIXX Pyridoxal kinase PdxY OS=Leifsonia xyli 
+subsp. xyli (strain CTCB07) OX=281090 GN=pdxY PE=3 SV=1
+Length=283
+
+ Score = 41.9 bits (97),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 44/159 (28%), Positives = 64/159 (40%), Gaps = 6/159 (4%)
+
+Query  86   IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRAL  145
+            + A+A      P   Y  DPV+   + G     A        ++P+A LITPN  EL  L
+Sbjct  92   VDAVARVKAADPHAVYACDPVMGNAASGCFVAPAIPDLLRDRVVPVADLITPNQFELGYL  151
+
+Query  146  TGV--DDLE---QATEKLFQMGAQAVLVKGGHE-DTPDFIKNNLYIDGELAASSNCPRLE  199
+            TG   D LE    + E    MG   VLV      D P+     L +D   A     PRL 
+Sbjct  152  TGSTPDTLESTLASVEAARAMGPSTVLVTSVERPDRPEGTIEMLAVDDTGAWIVQTPRLP  211
+
+Query  200  GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             + +GSG   A+            + A++   + ++ +L
+Sbjct  212  MKANGSGDVTAALFTAHYVRTGEAETALRKTVSSVYDLL  250
+
+
+>sp|Q55EK9|PDXK_DICDI Pyridoxal kinase OS=Dictyostelium discoideum 
+OX=44689 GN=pykA PE=1 SV=1
+Length=302
+
+ Score = 41.5 bits (96),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 29/87 (33%), Positives = 44/87 (51%), Gaps = 8/87 (9%)
+
+Query  95   VHPDYQYVLDPVLVANSGGSLGDQATLVKAFV-ELIPLATLITPNTVELRALTGV-----  148
+             +P+  YV DPVL  N+   L     LV+ +  E+IP A  I PN  E+  LTG+     
+Sbjct  103  ENPNLIYVCDPVLGDNN--ELYVPEDLVEVYKNEVIPNADYIFPNQTEVEFLTGIKIKND  160
+
+Query  149  DDLEQATEKLFQMGAQAVLVKGGHEDT  175
+             D  +A ++  +MG + V++     DT
+Sbjct  161  QDALKAIDQFHKMGVKNVVITSLFFDT  187
+
+
+>sp|Q51892|PDXY_PROMI Pyridoxal kinase PdxY OS=Proteus mirabilis 
+OX=584 GN=pdxY PE=3 SV=2
+Length=289
+
+ Score = 41.1 bits (95),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 46/193 (24%), Positives = 81/193 (42%), Gaps = 23/193 (12%)
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAEFLR----VHPDYQYVLDPVLVANSGGSL  115
+            LAQ +AV+         SG LG+ +    + + ++     +P+  Y  DPV+     G +
+Sbjct  73   LAQCDAVL---------SGYLGSAEQGRRIVDIVKKVKQANPNAWYFCDPVMGHPEKGCI  123
+
+Query  116  GDQATLVKAFVELIPLATLITPNTVELRALTG------VDDLEQATEKLFQMGAQAVLVK  169
+                       + +P++ +I PN +EL  L G      VD   +A  +L Q G + VLVK
+Sbjct  124  VPPEVSGVLCEDALPISDIIAPNLLELETLAGGATLHNVDQCVKAARQLCQQGPKIVLVK  183
+
+Query  170  GGHEDTPDFIK-NNLYIDGELAASSNCPRLE-GEYH--GSGCSLASFIAGRLALGDSLKI  225
+                      +   L +  + +   + P ++ GE    G G   +  +   L  G  LK 
+Sbjct  184  HLSRAGFRHDRFEMLLVTADHSWHVSRPLVDFGERQPVGVGDLTSGLMLVDLLKGVELKT  243
+
+Query  226  AVQHAETWLFGVL  238
+            A++H    ++ V+
+Sbjct  244  ALEHVAAAVYEVM  256
+
+
+>sp|Q9CNY1|PDXY_PASMU Pyridoxal kinase PdxY OS=Pasteurella multocida 
+(strain Pm70) OX=272843 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 41.1 bits (95),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 32/109 (29%), Positives = 51/109 (47%), Gaps = 17/109 (16%)
+
+Query  74   CVKSGMLGTTDNIAALAEFLR----VHPDYQYVLDPVLVANSGGSL---GDQATLVK-AF  125
+             + SG +G+ + +  +   +R     +P+  Y+ DPV+     G +   G +  L+  A 
+Sbjct  77   AIVSGYIGSAEQVEEIVNAVRFIKSKNPNALYLCDPVMGHPDKGCIVAEGVKEGLINLAM  136
+
+Query  126  VELIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVK  169
+             E    A LITPN VELR L+G+        + A   +   G + VLVK
+Sbjct  137  AE----ADLITPNLVELRELSGLPVENFAQAQDAVRAILAKGPKKVLVK  181
+
+
+>sp|C3K4G7|PDXY_PSEFS Pyridoxal kinase PdxY OS=Pseudomonas fluorescens 
+(strain SBW25) OX=216595 GN=pdxY PE=3 SV=1
+Length=290
+
+ Score = 40.7 bits (94),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 49/199 (25%), Positives = 78/199 (39%), Gaps = 17/199 (9%)
+
+Query  60   LAQANAVVDDL-PIKCVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGS  114
+            L +  A + +L     + SG LG+ D     +  +A    ++P   Y+ DPV+     G 
+Sbjct  65   LVEGIAAIGELGNCDAILSGYLGSADQGRAILTGVARIKAINPKALYLCDPVMGHPEKGC  124
+
+Query  115  LGDQATLVKAFVELIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVK  169
+            +  Q        E   +A  + PN +EL +  G     + D     + L   G +AVLVK
+Sbjct  125  IVPQEVSDFLLDEAAAMADFLCPNQLELDSFAGRKPQSLFDCLAMAKALLARGPKAVLVK  184
+
+Query  170  GGHEDTPDFIKN---NLYIDGELAASSNCPRL--EGEYHGSGCSLASFIAGRLALGDSLK  224
+              H D P  + +    L +  E +     P L    +  G G   +     R+ LGDSL 
+Sbjct  185  --HLDYPGKLPDGFEILLVTAEGSWHLRRPLLAFARQPVGVGDLTSGLFLARVLLGDSLL  242
+
+Query  225  IAVQHAETWLFGVLKNAET  243
+             A +     +  VL   + 
+Sbjct  243  AAFEFTAAAVHEVLLETQA  261
+
+
+>sp|Q5E345|PDXY_ALIF1 Pyridoxal kinase PdxY OS=Aliivibrio fischeri 
+(strain ATCC 700601 / ES114) OX=312309 GN=pdxY PE=3 SV=1
+Length=289
+
+ Score = 40.7 bits (94),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 32/107 (30%), Positives = 54/107 (50%), Gaps = 13/107 (12%)
+
+Query  74   CVKSGMLGTT----DNIAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+     + + A+ +  + +P+  Y  DPV+     G +   A  V+ F +  
+Sbjct  78   AVLSGYLGSAAQGQEIVTAVNKIKQDNPNAIYFCDPVMGHPEKGCI--VAPEVETFFKES  135
+
+Query  130  PL--ATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVK  169
+             L  A +I PN +EL +LTG     +D + +A  +L + G + V+VK
+Sbjct  136  ALSSADIIAPNLLELESLTGMTINTLDQVIEANNQLLEKGVKMVVVK  182
+
+
+>sp|Q8W1X2|PDXK_ARATH Pyridoxal kinase OS=Arabidopsis thaliana 
+OX=3702 GN=PK PE=1 SV=2
+Length=309
+
+ Score = 40.7 bits (94),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 33/104 (32%), Positives = 51/104 (49%), Gaps = 12/104 (12%)
+
+Query  75   VKSGMLGTT---DNIAALAEFLRV-HPDYQYVLDPVLVANSGGSLGDQATLVKAFVE-LI  129
+            V +G +G+    D I  +   LR  +P+  YV DPV+     G L     LV  + E ++
+Sbjct  91   VLTGYIGSVSFLDTILEVINKLRSVNPNLTYVCDPVM--GDEGKLYVPEELVHVYREKVV  148
+
+Query  130  PLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLV  168
+            PLA+++TPN  E   LTG+     +D  +A   L   G   V++
+Sbjct  149  PLASMLTPNQFEAEKLTGLRINSEEDGREACAILHAAGPSKVVI  192
+
+
+>sp|Q65UE8|PDXY_MANSM Pyridoxal kinase PdxY OS=Mannheimia succiniciproducens 
+(strain MBEL55E) OX=221988 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 40.3 bits (93),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 34/108 (31%), Positives = 54/108 (50%), Gaps = 15/108 (14%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSL---GDQATLVKAFV  126
+             V SG LG+ +     I A+ +   ++P   Y+ DPV+     G +   G +  L+   V
+Sbjct  77   AVVSGYLGSAEQVDEIIKAVEKVKSLNPQALYLCDPVMGHPDKGCIVADGVKEGLINLAV  136
+
+Query  127  ELIPLATLITPNTVELRALTG--VDDLEQATEK---LFQMGAQAVLVK  169
+                 A ++TPN VELR ++G  V++ EQA E    +   G + VL+K
+Sbjct  137  SH---ADILTPNLVELREISGLPVENFEQAIEAVKVIRAKGPKTVLIK  181
+
+
+>sp|Q9RYX0|PDXY_DEIRA Pyridoxal kinase PdxY OS=Deinococcus radiodurans 
+(strain ATCC 13939 / DSM 20539 / JCM 16871 / LMG 4051 
+/ NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422) OX=243230 GN=pdxY 
+PE=3 SV=2
+Length=298
+
+ Score = 40.0 bits (92),  Expect = 0.011, Method: Composition-based stats.
+ Identities = 47/182 (26%), Positives = 75/182 (41%), Gaps = 20/182 (11%)
+
+Query  75   VKSGMLGTTDNIAAL----AEFLRVHPDYQYVLDPVLVANSGGSL--GDQATLVKAFVEL  128
+            V SG +G+   +AA+        + HP   Y  DPV+     G     D   L+ A  + 
+Sbjct  86   VLSGYVGSGGTVAAVVGAVGRVRQAHPQALYCCDPVMGDVGRGVFVHPDLPALIAA--QA  143
+
+Query  129  IPLATLITPNTVELRALTGVD---------DLEQATEKLFQMGAQAVLVKG-GHEDTPDF  178
+            IP A ++TPN  EL  LTG                 E+L   G + VL+      D P  
+Sbjct  144  IPAADIVTPNQFELELLTGQKVETLADALAAAHALRERLNPAGPRIVLLTSLVRADAPAS  203
+
+Query  179  IKNNLYIDGELAASSNCP--RLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFG  236
+                L + GE +     P   L+   +G+G ++A+   G+     S + A+  + + L+ 
+Sbjct  204  SIETLAVTGEGSWLCRTPLLPLDPPRNGTGDAIAALFYGQFLRTGSAEQALTLSMSALYA  263
+
+Query  237  VL  238
+            +L
+Sbjct  264  LL  265
+
+
+>sp|O14242|YELB_SCHPO Putative pyridoxal kinase C6F6.11c OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=SPAC6F6.11c PE=3 SV=2
+Length=309
+
+ Score = 40.0 bits (92),  Expect = 0.014, Method: Composition-based stats.
+ Identities = 24/80 (30%), Positives = 42/80 (53%), Gaps = 6/80 (8%)
+
+Query  73   KCVKSGMLGTTDNIAALAEFLRV----HPDYQYVLDPVLVANSGGSLGDQATLVKAFVEL  128
+            +C+ +G      ++ A+ E +R     +    +V DPVL  N  G L  + +++  + E+
+Sbjct  78   ECLLTGYARGIGSVKAIMEIVRSVKSKNKKAFWVFDPVLGDN--GRLYVEESIIPLYREM  135
+
+Query  129  IPLATLITPNTVELRALTGV  148
+            +P A LITPN  E   L+G+
+Sbjct  136  LPFADLITPNGFEAEILSGM  155
+
+
+>sp|Q2L1P5|PDXK_BORA1 Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Bordetella avium (strain 197N) OX=360910 GN=pdxK PE=3 SV=1
+Length=296
+
+ Score = 39.6 bits (91),  Expect = 0.016, Method: Composition-based stats.
+ Identities = 48/178 (27%), Positives = 77/178 (43%), Gaps = 12/178 (7%)
+
+Query  72   IKCVKSGMLGTTDNIAALAEFL----RVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ +  G LG+ +    L  ++     VHP    ++DPV+  +  G L     L +A  E
+Sbjct  89   LRAILVGYLGSAEQARVLGRWIARIREVHPQVLVIVDPVMGDDDHG-LYVTEGLAEASRE  147
+
+Query  128  -LIPLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLV-KGGHEDTPDFIK  180
+             L+P A  +TPN+ EL  LTG     VD    A  +L   G + V+V     +D P    
+Sbjct  148  CLVPQAHGLTPNSFELGLLTGCEVGRVDQAVAAARRLLAQGLRWVVVTSAAQQDCPPGQV  207
+
+Query  181  NNLYIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+              L +    A      R++    G+G    + +   L  G SL+ AV+ +  +L   L
+Sbjct  208  QLLAVTASQAHLLRHQRVDTAPKGTGDLFCAELTAHLLAGASLERAVEASSRYLVQAL  265
+
+
+>sp|O74860|YQ9A_SCHPO Putative pyridoxal kinase C18.10 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=SPCC18.10 
+PE=3 SV=1
+Length=340
+
+ Score = 39.2 bits (90),  Expect = 0.021, Method: Composition-based stats.
+ Identities = 29/111 (26%), Positives = 52/111 (47%), Gaps = 15/111 (14%)
+
+Query  60   LAQANAVVDDLPIKCVKSGMLGTTDNIAALAE----FLRVHPDYQYVLDPVLVANSGGSL  115
+            L Q N +V D     + +G +   D I  + +    + + HP   ++LDPV+     G +
+Sbjct  76   LLQDNGIVYD----AILTGFVPNHDIIQVIFDCVLAYKKDHPKVLWLLDPVM--GDQGKM  129
+
+Query  116  GDQATLVKAFVELIPLATLITPNTVELRALTGV-----DDLEQATEKLFQM  161
+                 ++  +  +IP A  ITPN  E+  LT +      D ++  EK++Q+
+Sbjct  130  YVDTNVISTYKAMIPHAFAITPNAFEVEILTDIVIHTQMDAKRGLEKIYQL  180
+
+
+>sp|Q83KY1|PDXY_SHIFL Pyridoxal kinase PdxY OS=Shigella flexneri 
+OX=623 GN=pdxY PE=3 SV=3
+Length=287
+
+ Score = 38.4 bits (88),  Expect = 0.042, Method: Composition-based stats.
+ Identities = 38/180 (21%), Positives = 75/180 (42%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELR-----ALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL      A+  V++   A  +L + G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHAVNNVEEAVLAARELIEQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  +     + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEVWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|Q8ZPM8|PDXY_SALTY Pyridoxal kinase PdxY OS=Salmonella typhimurium 
+(strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=pdxY 
+PE=3 SV=1
+Length=286
+
+ Score = 37.6 bits (86),  Expect = 0.073, Method: Composition-based stats.
+ Identities = 32/120 (27%), Positives = 50/120 (42%), Gaps = 10/120 (8%)
+
+Query  60   LAQANAVVDDLP-IKCVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGS  114
+            + Q  A +  L     V SG LG+ +     +  + +    +P  +Y  DPV+     G 
+Sbjct  62   IVQGIADIGQLAHCDAVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGC  121
+
+Query  115  LGDQATLVKAFVELIPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVK  169
+            +             +P + +I PN +EL  L+      VDD  QA  +L   G + VLVK
+Sbjct  122  IVAPGVAEFHVRYALPASDIIAPNLIELEILSKHSVNNVDDAVQAARELIAQGPEIVLVK  181
+
+
+>sp|Q57PI7|PDXY_SALCH Pyridoxal kinase PdxY OS=Salmonella choleraesuis 
+(strain SC-B67) OX=321314 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 37.6 bits (86),  Expect = 0.073, Method: Composition-based stats.
+ Identities = 32/120 (27%), Positives = 50/120 (42%), Gaps = 10/120 (8%)
+
+Query  60   LAQANAVVDDLP-IKCVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGS  114
+            + Q  A +  L     V SG LG+ +     +  + +    +P  +Y  DPV+     G 
+Sbjct  62   IVQGIADIGQLAHCDAVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGC  121
+
+Query  115  LGDQATLVKAFVELIPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVK  169
+            +             +P + +I PN +EL  L+      VDD  QA  +L   G + VLVK
+Sbjct  122  IVAPGVAEFHVRYALPASDIIAPNLIELEILSKHSVNNVDDAVQAARELIAQGPEIVLVK  181
+
+
+>sp|O00764|PDXK_HUMAN Pyridoxal kinase OS=Homo sapiens OX=9606 
+GN=PDXK PE=1 SV=1
+Length=312
+
+ Score = 37.6 bits (86),  Expect = 0.075, Method: Composition-based stats.
+ Identities = 27/94 (29%), Positives = 44/94 (47%), Gaps = 8/94 (9%)
+
+Query  91   EFLRVHPDYQYVLDPVL--VANSGGSLGDQATLVKAFVE-LIPLATLITPNTVELRALTG  147
+            E  + +P   YV DPVL    +  GS+     L+  + E ++PLA +ITPN  E   L+G
+Sbjct  100  ELKQQNPRLVYVCDPVLGDKWDGEGSMYVPEDLLPVYKEKVVPLADIITPNQFEAELLSG  159
+
+Query  148  -----VDDLEQATEKLFQMGAQAVLVKGGHEDTP  176
+                  ++  +  + L  MG   V++      +P
+Sbjct  160  RKIHSQEEALRVMDMLHSMGPDTVVITSSDLPSP  193
+
+
+>sp|P82197|PDXK_SHEEP Pyridoxal kinase OS=Ovis aries OX=9940 GN=PDXK 
+PE=1 SV=1
+Length=312
+
+ Score = 37.6 bits (86),  Expect = 0.081, Method: Composition-based stats.
+ Identities = 29/94 (31%), Positives = 46/94 (49%), Gaps = 8/94 (9%)
+
+Query  91   EFLRVHPDYQYVLDPVL--VANSGGSLGDQATLVKAFVE-LIPLATLITPNTVELRALTG  147
+            E  + +P   YV DPV+    N  G++     L+  + E ++P+A +ITPN  E   LTG
+Sbjct  100  ELKQQNPRLVYVCDPVMGDQRNGEGAMYVPDDLLPVYREKVVPVADIITPNQFEAELLTG  159
+
+Query  148  --VDDLEQATE---KLFQMGAQAVLVKGGHEDTP  176
+              +   E+A E    L  MG   V++   +  +P
+Sbjct  160  RKIHSQEEALEVMDMLHSMGPDTVVITSSNLLSP  193
+
+
+>sp|B1JFM7|PDXY_PSEPW Pyridoxal kinase PdxY OS=Pseudomonas putida 
+(strain W619) OX=390235 GN=pdxY PE=3 SV=1
+Length=290
+
+ Score = 37.3 bits (85),  Expect = 0.10, Method: Composition-based stats.
+ Identities = 28/105 (27%), Positives = 46/105 (44%), Gaps = 9/105 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +A +     V+P   Y+ DPV+     G +  Q        + +
+Sbjct  80   AVLSGYLGSAEQGRAILAGVERIKAVNPKALYLCDPVMGHAEKGCIVPQEVSEFLLDDAV  139
+
+Query  130  PLATLITPNTVELRALTG-----VDDLEQATEKLFQMGAQAVLVK  169
+              A ++ PN +EL +  G     ++D  +    L + G Q VLVK
+Sbjct  140  AQADILCPNQLELDSFCGRRAQSLEDCVRMARGLLERGPQVVLVK  184
+
+
+>sp|O46560|PDXK_PIG Pyridoxal kinase OS=Sus scrofa OX=9823 GN=PDXK 
+PE=1 SV=1
+Length=322
+
+ Score = 37.3 bits (85),  Expect = 0.11, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 43/94 (46%), Gaps = 8/94 (9%)
+
+Query  91   EFLRVHPDYQYVLDPVL--VANSGGSLGDQATLVKAFVE-LIPLATLITPNTVELRALTG  147
+            E  + +P   YV DPV+    +  GS+     L+  + E ++P+A +ITPN  E   LTG
+Sbjct  110  ELKQQNPRLVYVCDPVMGDKWDGEGSMYVPEDLLPVYREKVVPVADIITPNQFEAELLTG  169
+
+Query  148  -----VDDLEQATEKLFQMGAQAVLVKGGHEDTP  176
+                  ++     + L  MG   V++      +P
+Sbjct  170  RRIHSEEEALAVMDMLHAMGPDTVVITSSDLPSP  203
+
+
+>sp|Q7W6K7|PDXK_BORPA Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Bordetella parapertussis (strain 12822 / ATCC BAA-587 / 
+NCTC 13253) OX=257311 GN=pdxK PE=3 SV=2
+Length=283
+
+ Score = 36.9 bits (84),  Expect = 0.11, Method: Composition-based stats.
+ Identities = 42/182 (23%), Positives = 74/182 (41%), Gaps = 16/182 (9%)
+
+Query  72   IKCVKSGMLGTTDNIAAL----AEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V+ G LG      AL    A  + V PD +  +DPV+  +  G       +      
+Sbjct  89   VRVVQLGYLGGPAQAEALGRWIAGLVAVRPDLRVHIDPVIGDHDSGVYVAPGMVAAYRDH  148
+
+Query  128  LIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGGHEDT--PDFIK  180
+            L+PLA  +TPN  EL  LTG+     +    A   L    A+ V+V      T  P  ++
+Sbjct  149  LLPLAQGLTPNGFELECLTGLPTGTMEQTIAAARTLLGGRARWVIVTSAAPATWPPGRVR  208
+
+Query  181  NNL--YIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+              +  + D ++   ++   ++    G+G    + + G L  G  +  A + A   +   L
+Sbjct  209  VAVVTHDDAQVLEHAH---VDTAPKGTGDMFGAALTGHLLAGQPVAEAARRAALQVIEAL  265
+
+Query  239  KN  240
+            + 
+Sbjct  266  ER  267
+
+
+>sp|Q7WII1|PDXK_BORBR Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Bordetella bronchiseptica (strain ATCC BAA-588 / NCTC 13252 
+/ RB50) OX=257310 GN=pdxK PE=3 SV=2
+Length=283
+
+ Score = 36.9 bits (84),  Expect = 0.11, Method: Composition-based stats.
+ Identities = 42/182 (23%), Positives = 74/182 (41%), Gaps = 16/182 (9%)
+
+Query  72   IKCVKSGMLGTTDNIAAL----AEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V+ G LG      AL    A  + V PD +  +DPV+  +  G       +      
+Sbjct  89   VRVVQLGYLGGPAQAEALGRWIAGLVAVRPDLRVHIDPVIGDHDSGVYVAPGMVAAYRDH  148
+
+Query  128  LIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGGHEDT--PDFIK  180
+            L+PLA  +TPN  EL  LTG+     +    A   L    A+ V+V      T  P  ++
+Sbjct  149  LLPLAQGLTPNGFELECLTGLPTGTMEQTIAAARTLLGGRARWVIVTSAAPATWPPGRVR  208
+
+Query  181  NNL--YIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+              +  + D ++   ++   ++    G+G    + + G L  G  +  A + A   +   L
+Sbjct  209  VAVVTHDDAQVLEHAH---VDTAPKGTGDMFGAALTGHLLAGQPVAEAARRAALQVIEAL  265
+
+Query  239  KN  240
+            + 
+Sbjct  266  ER  267
+
+
+>sp|A1A6H3|RBSK_ARATH Ribokinase OS=Arabidopsis thaliana OX=3702 
+GN=RBSK PE=1 SV=1
+Length=379
+
+ Score = 36.9 bits (84),  Expect = 0.15, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 35/67 (52%), Gaps = 11/67 (16%)
+
+Query  127  ELIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+            EL+    +++PN  EL  LTG+     + + QA  K  ++G + VLVK G + +      
+Sbjct  244  ELLDSIDILSPNETELSRLTGMPTETFEQISQAVAKCHKLGVKQVLVKLGSKGS------  297
+
+Query  182  NLYIDGE  188
+             L+I GE
+Sbjct  298  ALFIQGE  304
+
+
+>sp|Q8Z6Q3|PDXY_SALTI Putative pyridoxal kinase PdxY OS=Salmonella 
+typhi OX=90370 GN=pdxY PE=5 SV=1
+Length=228
+
+ Score = 36.1 bits (82),  Expect = 0.16, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 50/120 (42%), Gaps = 10/120 (8%)
+
+Query  60   LAQANAVVDDLP-IKCVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGS  114
+            + Q  A +  L     V SG LG+ +     +  + +    +P  +Y  DPV+     G 
+Sbjct  62   IVQGIADIGQLAHCDAVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGC  121
+
+Query  115  LGDQATLVKAFVELIPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVK  169
+            +             +P + +I PN +EL  L+      V+D  QA  +L   G + VLVK
+Sbjct  122  IVAPGVAEFHVRYALPASDIIAPNLIELEILSKHSVNNVNDAVQAARELIAQGPEIVLVK  181
+
+
+>sp|Q7N3W7|PDXY_PHOLL Pyridoxal kinase PdxY OS=Photorhabdus laumondii 
+subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01) 
+OX=243265 GN=pdxY PE=3 SV=1
+Length=287
+
+ Score = 36.5 bits (83),  Expect = 0.16, Method: Composition-based stats.
+ Identities = 46/183 (25%), Positives = 79/183 (43%), Gaps = 23/183 (13%)
+
+Query  74   CVKSGMLGTTDNIAALAEFLR----VHPDYQYVLDPVLVANSGGSL---GDQATLVKAFV  126
+             V SG +G+ +    + + ++    V+PD  Y  DPV+     G +   G    L K   
+Sbjct  77   AVLSGYIGSAEQGGHIIDIVKRVKAVNPDAWYFCDPVMGHPEKGCIVVPGVAEFLCK---  133
+
+Query  127  ELIPLATLITPNTVELRAL-----TGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN  181
+            + +P++ +I PN +EL  L     T V+    A   L   G   VLVK  H     +  +
+Sbjct  134  DALPVSDIIAPNLLELETLSMQKVTNVEQAVMAARTLCDKGPDIVLVK--HLSRAGYRTD  191
+
+Query  182  ---NLYIDGELAASSNCPRLE-GEYH--GSGCSLASFIAGRLALGDSLKIAVQHAETWLF  235
+                L +  E +   + P ++ GE    G G   +  +   L  G+SL+ A++H    ++
+Sbjct  192  RFEMLLVTKEHSWHVSRPLVDFGERQPVGVGDLTSGLLLVNLLKGESLQTALEHVAAAVY  251
+
+Query  236  GVL  238
+             V+
+Sbjct  252  EVM  254
+
+
+>sp|Q5PIK8|PDXY_SALPA Pyridoxal kinase PdxY OS=Salmonella paratyphi 
+A (strain ATCC 9150 / SARB42) OX=295319 GN=pdxY PE=3 SV=1
+Length=286
+
+ Score = 36.1 bits (82),  Expect = 0.20, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 50/120 (42%), Gaps = 10/120 (8%)
+
+Query  60   LAQANAVVDDLP-IKCVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGS  114
+            + Q  A +  L     V SG LG+ +     +  + +    +P  +Y  DPV+     G 
+Sbjct  62   IVQGIADIGQLAHCDAVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGC  121
+
+Query  115  LGDQATLVKAFVELIPLATLITPNTVELRALT-----GVDDLEQATEKLFQMGAQAVLVK  169
+            +             +P + +I PN +EL  L+      V+D  QA  +L   G + VLVK
+Sbjct  122  IVAPGVAEFHVRYALPASDIIAPNLIELEILSKHSVNNVNDAVQAARELIAQGPEIVLVK  181
+
+
+>sp|Q320Z3|PDXY_SHIBS Pyridoxal kinase PdxY OS=Shigella boydii 
+serotype 4 (strain Sb227) OX=300268 GN=pdxY PE=3 SV=3
+Length=287
+
+ Score = 36.1 bits (82),  Expect = 0.22, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 75/180 (42%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELR-----ALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL      A+  V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHAVNNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|P77150|PDXY_ECOLI Pyridoxal kinase PdxY OS=Escherichia coli 
+(strain K12) OX=83333 GN=pdxY PE=1 SV=3
+Length=287
+
+ Score = 36.1 bits (82),  Expect = 0.22, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 75/180 (42%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELR-----ALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL      A+  V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHAVNNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|P39988|BUD16_YEAST Putative pyridoxal kinase BUD16 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=BUD16 PE=1 SV=1
+Length=312
+
+ Score = 35.7 bits (81),  Expect = 0.29, Method: Composition-based stats.
+ Identities = 44/189 (23%), Positives = 81/189 (43%), Gaps = 22/189 (12%)
+
+Query  47   QVFGF---EATSKELLLAQANAVVDDLPIKCVKSGMLGTTDNIAAL----AEFLRVHPDY  99
+            +VFG    E   KELL    +    D   + + SG L   +++  +    A+F   +P+ 
+Sbjct  50   KVFGTITRETDLKELLSGLFDNFSQDY--QALLSGYLPNKNSVRCMGTYYAKFKEANPEM  107
+
+Query  100  QYVLDPVLVANSGGSLGDQATLVKAFVELI----PLATLITPNTVELRALTG-----VDD  150
+             +++DPV+     G L     ++  + +L      L  +ITPN  EL  L G      + 
+Sbjct  108  IWLMDPVM--GDEGQLYVSEDVIPEYRKLALSPKQLVDIITPNQFELEILYGGEIKTKEH  165
+
+Query  151  LEQATEKLFQMGAQAVLVKGGHE--DTPDFIKNNLYIDGELAASSNCPRLEGEYHGSGCS  208
+            L++A +KL Q     ++     +  D  DFI     ++G+       P ++  + G G  
+Sbjct  166  LKKALKKLHQTIPVIIVTSCDCKMFDDKDFIYCVASMEGKTPIVYRVPFIDSYFTGVGDL  225
+
+Query  209  LASFIAGRL  217
+             ++ +  R+
+Sbjct  226  FSALLLDRV  234
+
+
+>sp|Q32FD7|PDXY_SHIDS Pyridoxal kinase PdxY OS=Shigella dysenteriae 
+serotype 1 (strain Sd197) OX=300267 GN=pdxY PE=3 SV=3
+Length=287
+
+ Score = 35.3 bits (80),  Expect = 0.38, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 74/180 (41%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELRAL-----TGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL  L       V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHPVNNVEEAVLAARELIAQGPQIVLVK--HLAQAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|Q8X649|PDXY_ECO57 Pyridoxal kinase PdxY OS=Escherichia coli 
+O157:H7 OX=83334 GN=pdxY PE=3 SV=3
+Length=287
+
+ Score = 35.3 bits (80),  Expect = 0.44, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 74/180 (41%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELRAL-----TGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL  L       V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHPVNNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|Q1RBF9|PDXY_ECOUT Pyridoxal kinase PdxY OS=Escherichia coli 
+(strain UTI89 / UPEC) OX=364106 GN=pdxY PE=3 SV=3
+Length=287
+
+ Score = 34.9 bits (79),  Expect = 0.46, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 74/180 (41%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELRAL-----TGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL  L       V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHPVNNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|Q0THJ1|PDXY_ECOL5 Pyridoxal kinase PdxY OS=Escherichia coli 
+O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=pdxY PE=3 SV=2
+Length=287
+
+ Score = 34.9 bits (79),  Expect = 0.46, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 74/180 (41%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELRAL-----TGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL  L       V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHPVNNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|Q49776|HIS1_MYCLE ATP phosphoribosyltransferase OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=hisG PE=3 SV=1
+Length=287
+
+ Score = 34.9 bits (79),  Expect = 0.48, Method: Composition-based stats.
+ Identities = 19/54 (35%), Positives = 32/54 (59%), Gaps = 0/54 (0%)
+
+Query  114  SLGDQATLVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAVL  167
+            S+ D+ATL+ + +E   +A L  P  V +RAL    D+    ++L  +GA+A+L
+Sbjct  225  SVLDKATLITSGLESPTIAPLAEPGWVAIRALVPRRDINGIMDELAAIGAKAIL  278
+
+
+>sp|Q8FH89|PDXY_ECOL6 Pyridoxal kinase PdxY OS=Escherichia coli 
+O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=pdxY 
+PE=3 SV=3
+Length=287
+
+ Score = 34.9 bits (79),  Expect = 0.53, Method: Composition-based stats.
+ Identities = 39/180 (22%), Positives = 74/180 (41%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELRAL-----TGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL  L       V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHPVKNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+ A++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEALEHVTAAVYEIM  255
+
+
+>sp|Q0II59|PDXK_BOVIN Pyridoxal kinase OS=Bos taurus OX=9913 GN=PDXK 
+PE=2 SV=1
+Length=312
+
+ Score = 34.6 bits (78),  Expect = 0.73, Method: Composition-based stats.
+ Identities = 27/86 (31%), Positives = 43/86 (50%), Gaps = 8/86 (9%)
+
+Query  91   EFLRVHPDYQYVLDPVL--VANSGGSLGDQATLVKAFVE-LIPLATLITPNTVELRALTG  147
+            E  + +P   YV DPV+    +  G++     L+  + E ++P+A +ITPN  E   LTG
+Sbjct  100  ELKQQNPRLVYVCDPVMGDQRDGEGAMYVPDDLLPVYREKVVPVADIITPNQFEAELLTG  159
+
+Query  148  --VDDLEQATE---KLFQMGAQAVLV  168
+              +   E+A E    L  MG   V++
+Sbjct  160  RKIHTQEEALEVMDMLHSMGPDTVVI  185
+
+
+>sp|Q3Z1Z2|PDXY_SHISS Pyridoxal kinase PdxY OS=Shigella sonnei 
+(strain Ss046) OX=300269 GN=pdxY PE=3 SV=3
+Length=287
+
+ Score = 34.2 bits (77),  Expect = 0.81, Method: Composition-based stats.
+ Identities = 38/180 (21%), Positives = 74/180 (41%), Gaps = 17/180 (9%)
+
+Query  74   CVKSGMLGTTDN----IAALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELI  129
+             V SG LG+ +     +  + +    +P  +Y  DPV+     G +             +
+Sbjct  78   AVLSGYLGSAEQGEHILGIVRQVKAANPQAKYFCDPVMGHPEKGCIVAPGVAEFHVRHGL  137
+
+Query  130  PLATLITPNTVELR-----ALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIKN---  181
+            P + +I PN VEL      A+  V++   A  +L   G Q VLVK  H     + ++   
+Sbjct  138  PASDIIAPNLVELEILCEHAVNNVEEAVLAARELIAQGPQIVLVK--HLARAGYSRDRFE  195
+
+Query  182  NLYIDGELAASSNCPRLE---GEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+             L +  + A   + P ++    +  G G   +  +  +L  G +L+  ++H    ++ ++
+Sbjct  196  MLLVTADEAWHISRPLVDFGMRQPVGVGDVTSGLLLVKLLQGATLQEVLEHVTAAVYEIM  255
+
+
+>sp|Q9LIQ4|THIM_ARATH Hydroxyethylthiazole kinase OS=Arabidopsis 
+thaliana OX=3702 GN=THIM PE=1 SV=1
+Length=276
+
+ Score = 34.2 bits (77),  Expect = 0.89, Method: Composition-based stats.
+ Identities = 50/177 (28%), Positives = 73/177 (41%), Gaps = 34/177 (19%)
+
+Query  87   AALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLA-TLITPNTVELRAL  145
+            A LA  LR      +VLDP  V+ SG  L       KA +ELI L  T+I  N  E+ AL
+Sbjct  89   AELASQLRK----PWVLDPAAVSCSGFRL-------KACLELIELKPTVIKGNGSEIIAL  137
+
+Query  146  T--------GVDDLEQAT-----EKLFQMGAQAVLVKGGHEDTPDFIKNNLYIDGE-LAA  191
+            +        G D   ++T      K   M + AV+   G  D        +  DG+ +  
+Sbjct  138  SSASRGQTKGADSSHESTDAIEAAKSLAMSSGAVVAVSGAVD--------IVTDGKQVIG  189
+
+Query  192  SSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVLKNAETPVPNG  248
+              N  ++  +   +GCSLA  I   LA+  S  +    +   +FG+       + NG
+Sbjct  190  VHNGTKMMQQITATGCSLAGLIVAFLAIDSSRVLEATVSAMAVFGIAGELGEAMANG  246
+
+
+>sp|A9CES5|TAGK_AGRFC Tagatose kinase OS=Agrobacterium fabrum 
+(strain C58 / ATCC 33970) OX=176299 GN=Atu3166 PE=1 SV=1
+Length=329
+
+ Score = 34.2 bits (77),  Expect = 0.94, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 30/54 (56%), Gaps = 0/54 (0%)
+
+Query  127  ELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAVLVKGGHEDTPDFIK  180
+            +L+ +  L+ P+  EL+A +G+DD E A EKL   G   +++K G      F +
+Sbjct  195  DLLAVTDLLLPSGEELQAASGLDDEEAAIEKLLAAGIGEIVLKRGANGASHFSR  248
+
+
+>sp|P0A9J6|RBSK_ECOLI Ribokinase OS=Escherichia coli (strain K12) 
+OX=83333 GN=rbsK PE=1 SV=1
+Length=309
+
+ Score = 33.8 bits (76),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 27/50 (54%), Gaps = 5/50 (10%)
+
+Query  127  ELIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGG  171
+            EL+ L  +ITPN  E   LTG+     +D  +A + L + G + VL+  G
+Sbjct  176  ELLALVDIITPNETEAEKLTGIRVENDEDAAKAAQVLHEKGIRTVLITLG  225
+
+
+>sp|P0A9J7|RBSK_ECO57 Ribokinase OS=Escherichia coli O157:H7 OX=83334 
+GN=rbsK PE=3 SV=1
+Length=309
+
+ Score = 33.8 bits (76),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 27/50 (54%), Gaps = 5/50 (10%)
+
+Query  127  ELIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGG  171
+            EL+ L  +ITPN  E   LTG+     +D  +A + L + G + VL+  G
+Sbjct  176  ELLALVDIITPNETEAEKLTGIRVENDEDAAKAAQVLHEKGIRTVLITLG  225
+
+
+>sp|P21689|TRPE_PSESS Anthranilate synthase component 1 OS=Pseudomonas 
+savastanoi OX=29438 GN=trpE PE=3 SV=1
+Length=505
+
+ Score = 34.2 bits (77),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 23/83 (28%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  107  LVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAV  166
+            +V+N  G L +  T + A   ++P  TL      ++RA+  +D+LE     ++  GA   
+Sbjct  373  IVSNVTGQLKNGLTAMDALRAILPAGTL--SGAPKIRAMEIIDELEPVKRGVYG-GAVGY  429
+
+Query  167  LVKGGHEDTPDFIKNNLYIDGEL  189
+            +   G+ DT   I+  +  +GEL
+Sbjct  430  MAWNGNMDTAIAIRTAVIKNGEL  452
+
+
+>sp|Q5AUZ6|ATNA_EMENI Nonribosomal peptide synthase atnA OS=Emericella 
+nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 
+/ NRRL 194 / M139) OX=227321 GN=atnA PE=2 SV=1
+Length=7214
+
+ Score = 34.2 bits (77),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 42/196 (21%), Positives = 79/196 (40%), Gaps = 22/196 (11%)
+
+Query  33    AAIACTALTIQNSQQV-FGFEATSKELLLAQANAVVD----DLPIKCVKSGMLGTTDNIA  87
+             AA   T   + NS +V +G   + + + LAQA  ++      +PI+      +   D +A
+Sbjct  3728  AAWGLTIGRLTNSSEVIYGSTRSGRNIDLAQATELMGPTIATVPIRISIDTSMSIEDFLA  3787
+
+Query  88    ALAEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRALTG  147
+             A+         Y+++           ++   +   KA  +   L  ++ P  +    + G
+Sbjct  3788  AVQNQATAAIPYEHL--------GLQNISKISPACKAACDFQNL-FVVQPAVISDSTILG  3838
+
+Query  148   VDDLEQATEKL--FQMGAQAVLVKGGHEDTPDFIKNNLYIDGELAASSNCPRLEGEYHGS  205
+             +  +E  T+ L  + +  + +L + G         N  Y DG++       RL G++H  
+Sbjct  3839  MKRVEIPTKGLHTYALNVECILTEEGTATL-----NFEY-DGKVMQDYQIQRLAGQFHHV  3892
+
+Query  206   GCSLASFIAGRLALGD  221
+              C L     GRL +GD
+Sbjct  3893  VCQLCENEDGRLKVGD  3908
+
+
+>sp|O35331|PDXK_RAT Pyridoxal kinase OS=Rattus norvegicus OX=10116 
+GN=Pdxk PE=1 SV=1
+Length=312
+
+ Score = 33.4 bits (75),  Expect = 1.6, Method: Composition-based stats.
+ Identities = 25/94 (27%), Positives = 43/94 (46%), Gaps = 8/94 (9%)
+
+Query  91   EFLRVHPDYQYVLDPVL--VANSGGSLGDQATLVKAFVE-LIPLATLITPNTVELRALTG  147
+            E  + +    YV DPV+    N  GS+     L+  + E ++P+A +ITPN  E   L+G
+Sbjct  100  ELKQQNSRLVYVCDPVMGDKWNGEGSMYVPQDLLPVYREKVVPMADIITPNQFEAELLSG  159
+
+Query  148  -----VDDLEQATEKLFQMGAQAVLVKGGHEDTP  176
+                  ++     + L +MG   V++      +P
+Sbjct  160  RKIHSQEEAFAVMDVLHRMGPDTVVITSSDLPSP  193
+
+
+>sp|P20579|TRPE_PSEPU Anthranilate synthase component 1 OS=Pseudomonas 
+putida OX=303 GN=trpE PE=3 SV=1
+Length=493
+
+ Score = 33.4 bits (75),  Expect = 1.9, Method: Composition-based stats.
+ Identities = 28/102 (27%), Positives = 46/102 (45%), Gaps = 10/102 (10%)
+
+Query  107  LVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAV  166
+            +V+N  G L +  T + A   ++P  TL      ++RA+  +D+LE     ++  GA   
+Sbjct  373  IVSNVAGQLREGLTAMDALRAILPAGTL--SGAPKIRAMEIIDELEPVKRGVYG-GAVGY  429
+
+Query  167  LVKGGHEDTPDFIKNNLYIDGEL-------AASSNCPRLEGE  201
+                G+ DT   I+  +  DGEL         + + P LE E
+Sbjct  430  FAWNGNMDTAIAIRTAVINDGELHVQAGGGIVADSVPALEWE  471
+
+
+>sp|Q7VYK4|PDXK_BORPE Pyridoxine/pyridoxal/pyridoxamine kinase 
+OS=Bordetella pertussis (strain Tohama I / ATCC BAA-589 / NCTC 
+13251) OX=257313 GN=pdxK PE=3 SV=2
+Length=283
+
+ Score = 33.0 bits (74),  Expect = 2.5, Method: Composition-based stats.
+ Identities = 39/182 (21%), Positives = 71/182 (39%), Gaps = 16/182 (9%)
+
+Query  72   IKCVKSGMLGTTDNIAAL----AEFLRVHPDYQYVLDPVLVANSGGSLGDQATLVKAFVE  127
+            ++ V+ G LG      AL    A  +   PD +  +DPV+  +  G       +      
+Sbjct  89   VRVVQLGYLGGPAQAEALGRWIAGLVAERPDLRVHIDPVIGDHDSGVYVAPGMVAAYRDH  148
+
+Query  128  LIPLATLITPNTVELRALTGV-----DDLEQATEKLFQMGAQAVLVKGGHEDT--PDFIK  180
+            L+ LA  +TPN  EL  LTG+     +    A   L    A+ V+V      T  P  ++
+Sbjct  149  LLSLAQGLTPNGFELECLTGLPTGTMEQTIAAARTLLGGRARWVIVTSAAPATWPPGRVR  208
+
+Query  181  NNL--YIDGELAASSNCPRLEGEYHGSGCSLASFIAGRLALGDSLKIAVQHAETWLFGVL  238
+              +  + D ++   ++   ++    G+G    + + G    G  +  A + A   +   L
+Sbjct  209  VAVVTHDDAQVLEHAH---VDTAPKGTGDMFGAALTGHRLAGQPVAEAARRAALQVIEAL  265
+
+Query  239  KN  240
+            + 
+Sbjct  266  ER  267
+
+
+>sp|Q07Y78|HLDE_SHEFN Bifunctional protein HldE OS=Shewanella 
+frigidimarina (strain NCIMB 400) OX=318167 GN=hldE PE=3 SV=1
+Length=476
+
+ Score = 33.0 bits (74),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 32/109 (29%), Positives = 49/109 (45%), Gaps = 16/109 (15%)
+
+Query  132  ATLITPNTVELRALTG----VDDLEQATEKLFQM-GAQAVLVKGGHEDTPDFIKNNLYID  186
+            A+LITPN  E  A+ G     DDL +  +KL ++   +A+LV    +      +N     
+Sbjct  189  ASLITPNMSEFEAVVGTVTSEDDLIEKAQKLIKLHDFEAILVTRSEKGMTLVSQNQ----  244
+
+Query  187  GELAASSNCPRLEGEYH---GSGCSLASFIAGRLALGDSLKIAVQHAET  232
+                   + P +  E H   G+G ++ S +A  +A G SL  A   A T
+Sbjct  245  ----PELHIPTVAREVHDVTGAGDTVISALATSIAAGASLAQACAIANT  289
+
+
+>sp|Q8IWD5|MFS6L_HUMAN Major facilitator superfamily domain-containing 
+protein 6-like OS=Homo sapiens OX=9606 GN=MFSD6L PE=2 
+SV=2
+Length=586
+
+ Score = 33.0 bits (74),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 26/57 (46%), Gaps = 8/57 (14%)
+
+Query  180  KNNLYIDGELAASSNCPRLE--------GEYHGSGCSLASFIAGRLALGDSLKIAVQ  228
+            +   +  G        PR+E        G ++GSGCSL SF+ G + +  SL +  Q
+Sbjct  469  RALWWAVGASVEDLATPRMERALSALFRGHFYGSGCSLGSFVGGFVVMRFSLAVLYQ  525
+
+
+>sp|P37293|NAT2_YEAST Putative N-terminal acetyltransferase 2 
+OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 
+GN=NAT2 PE=1 SV=2
+Length=288
+
+ Score = 32.2 bits (72),  Expect = 4.0, Method: Composition-based stats.
+ Identities = 28/103 (27%), Positives = 50/103 (49%), Gaps = 7/103 (7%)
+
+Query  99   YQYVLDPVLVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKL  158
+            +Q + D  L+A    + G   +L+   +  +PL  ++TP+ V+L    G+ DL +  +K+
+Sbjct  186  WQEMKDSTLLAELLIAYGIHKSLI---IVRVPLTAVLTPSFVKLLQRFGI-DLMKKQKKV  241
+
+Query  159  FQMGAQAVLVKGGHEDTPDFIKNNLYIDGELAASSNCPRLEGE  201
+            FQ  A    ++    +  DFIKN       L  +   PR +G+
+Sbjct  242  FQTMASGAKIRYKGNNPSDFIKNE---GTALDITKRKPRTKGQ  281
+
+
+>sp|P20580|TRPE_PSEAE Anthranilate synthase component 1 OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 
+/ JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 
+GN=trpE PE=1 SV=1
+Length=492
+
+ Score = 32.2 bits (72),  Expect = 4.5, Method: Composition-based stats.
+ Identities = 27/102 (26%), Positives = 47/102 (46%), Gaps = 10/102 (10%)
+
+Query  107  LVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRALTGVDDLEQATEKLFQMGAQAV  166
+            +V+N  G L +  + + A   ++P  TL      ++RA+  +D+LE     ++  GA   
+Sbjct  373  IVSNVTGQLREGLSAMDALRAILPAGTL--SGAPKIRAMEIIDELEPVKRGVYG-GAVGY  429
+
+Query  167  LVKGGHEDTPDFIKNNLYIDGEL-------AASSNCPRLEGE  201
+            L   G+ DT   I+  +  +GEL         + + P LE E
+Sbjct  430  LAWNGNMDTAIAIRTAVIKNGELHVQAGGGIVADSVPALEWE  471
+
+
+>sp|Q9VVW8|NNRD_DROME ATP-dependent (S)-NAD(P)H-hydrate dehydratase 
+OS=Drosophila melanogaster OX=7227 GN=Naxd PE=2 SV=1
+Length=300
+
+ Score = 31.9 bits (71),  Expect = 5.8, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 25/41 (61%), Gaps = 1/41 (2%)
+
+Query  134  LITPNTVELRALTGVDDLEQATEKLFQMGAQAVLVKGGHED  174
+            ++TPN +E + L G DD + A +K+  +GA   +++ G  D
+Sbjct  163  ILTPNVMEFQRLFGEDD-QAARQKMSLLGAGVTVLEKGAND  202
+
+
+>sp|P83534|RBSKI_LACSD Bifunctional ribokinase/ribose-5-phosphate 
+isomerase A OS=Lactobacillus sanfranciscensis (strain ATCC 
+27651 / DSM 20451 / JCM 5668 / KCTC 3205 / NCIMB 702811 / 
+NRRL B-3934 / L-12) OX=1423800 GN=rbsK/rbiA PE=1 SV=2
+Length=540
+
+ Score = 31.9 bits (71),  Expect = 5.9, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 31/60 (52%), Gaps = 9/60 (15%)
+
+Query  127  ELIPLATLITPNTVELRALTGVDDLEQAT-----EKLFQMGAQAVLV----KGGHEDTPD  177
+            EL+ L  +ITPN  E   LTG++  ++ +     +  F+ G + V++    +G    TPD
+Sbjct  174  ELLKLTDIITPNESEAATLTGIEVKDETSMLANAKFFFERGIKMVIITVGGRGSFFATPD  233
+
+
+>sp|Q8ESZ2|THIM1_OCEIH Hydroxyethylthiazole kinase 1 OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 
+/ KCTC 3954 / HTE831) OX=221109 GN=thiM1 PE=3 SV=1
+Length=257
+
+ Score = 31.1 bits (69),  Expect = 7.7, Method: Composition-based stats.
+ Identities = 35/135 (26%), Positives = 55/135 (41%), Gaps = 25/135 (19%)
+
+Query  102  VLDPVLVANSGGSLGDQATLVKAFVELIPLATLITPNTVELRALTGVD------------  149
+            +LDPV VA +      +  + K   E+ P  T+I  N  EL +L  ++            
+Sbjct  88   LLDPVGVAATSFR---RNAIDKILEEVRP--TVIKGNAGELASLVNINLEAKGVDSIGDG  142
+
+Query  150  DLEQATEKLFQMGAQAVLVKGGHEDTPDFIKNNLYIDGELAASSNCPRLEGEYHGSGCSL  209
+            +L+   +K+ +    AV+V G          + +Y+D  L  +           GSGC L
+Sbjct  143  NLDVIAQKVSEKYNTAVVVTGE--------TDVIYVDNHLIHNGTGHHYLSSITGSGCLL  194
+
+Query  210  ASFIAGRLALGDSLK  224
+             S IA  L    +LK
+Sbjct  195  GSIIAACLTTKSTLK  209
+
+
+>sp|A9B356|KPTA_HERA2 Probable RNA 2'-phosphotransferase OS=Herpetosiphon 
+aurantiacus (strain ATCC 23779 / DSM 785 / 114-95) 
+OX=316274 GN=kptA PE=3 SV=1
+Length=182
+
+ Score = 30.7 bits (68),  Expect = 9.0, Method: Composition-based stats.
+ Identities = 17/61 (28%), Positives = 33/61 (54%), Gaps = 1/61 (2%)
+
+Query  11  LDPSGGAGLQADIEAIGQSGAHAAIA-CTALTIQNSQQVFGFEATSKELLLAQANAVVDD  69
+           L+P G  G++  + A   +    ++A    +  QN++Q FGF+ T +++   Q ++V  D
+Sbjct  28  LEPGGWVGVEQLLAACAANNVAISLAELHEVVEQNNKQRFGFDPTGQKIRAHQGHSVTVD  87
+
+Query  70  L  70
+           L
+Sbjct  88  L  88
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.141    0.428    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0433    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19347902140
+
+
+  Database: ./data/msa/uniprot_sprot.fasta
+    Posted date:  Nov 27, 2020  1:17 PM
+  Number of letters in database: 203,007,781
+  Number of sequences in database:  563,552
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
